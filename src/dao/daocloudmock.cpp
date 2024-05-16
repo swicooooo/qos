@@ -5,9 +5,9 @@
 #include <QVariant>
 #include <qjsonobject.h>
 
-DaoCloudMock::DaoCloudMock()
+DaoCloudMock::DaoCloudMock(const QString &path)
 {
-    doc_ = QJsonDocument::fromJson(FileHelper::readFileAll(":/static/bucketsTest.json").toUtf8());
+    doc_ = QJsonDocument::fromJson(FileHelper::readFileAll(path).toUtf8());
 }
 
 QList<Bucket> DaoCloudMock::buckets()
@@ -27,7 +27,7 @@ QList<Bucket> DaoCloudMock::buckets()
 
 QList<Bucket> DaoCloudMock::login(const QString &secretId, const QString &secretKey, bool &flag)
 {
-    // 无法读取对象
+    // TODO 登录操作，向数据请求数据
     flag = true;
     return this->buckets();
 }

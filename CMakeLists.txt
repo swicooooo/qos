@@ -51,6 +51,7 @@ else()
             src/model/bucket.h src/model/bucketmodel.cpp src/model/bucketmodel.h
             src/dao/DaoClouds.h
             src/dao/daocloudmock.h src/dao/daocloudmock.cpp
+            src/plugins/qosplugin.h src/plugins/qosplugin.cpp
         )
     endif()
 endif()

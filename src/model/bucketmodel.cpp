@@ -3,12 +3,13 @@
 #include <Bucket.h>
 #include <DaoCloudMock.h>
 #include <DaoClouds.h>
+#include <QosPlugin.h>
 
 void BucketModel::setMockBuckets()
 {
     // 获取buckets数据
-    DaoClouds *dao = new DaoCloudMock();
-    QList<Bucket> buckets = dao->buckets();
+
+    QList<Bucket> buckets = QosPlugin::instance()->cloud()->buckets();
     model_->setRowCount(buckets.size());
     model_->setColumnCount(3);
 

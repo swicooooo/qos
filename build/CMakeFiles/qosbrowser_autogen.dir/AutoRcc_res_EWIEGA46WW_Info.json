@@ -1,0 +1,24 @@
+{
+	"BUILD_DIR" : "E:/qos/build/qosbrowser_autogen",
+	"CMAKE_BINARY_DIR" : "E:/qos/build",
+	"CMAKE_CURRENT_BINARY_DIR" : "E:/qos/build",
+	"CMAKE_CURRENT_SOURCE_DIR" : "E:/qos",
+	"CMAKE_SOURCE_DIR" : "E:/qos",
+	"INCLUDE_DIR" : "E:/qos/build/qosbrowser_autogen/include",
+	"INPUTS" : 
+	[
+		"E:/qos/static/default.qss",
+		"E:/qos/static/logo.png",
+		"E:/qos/static/bucketsTest.json"
+	],
+	"LOCK_FILE" : "E:/qos/build/CMakeFiles/qosbrowser_autogen.dir/AutoRcc_res_EWIEGA46WW_Lock.lock",
+	"MULTI_CONFIG" : false,
+	"OPTIONS" : [ "-name", "res" ],
+	"OUTPUT_CHECKSUM" : "EWIEGA46WW",
+	"OUTPUT_NAME" : "qrc_res.cpp",
+	"RCC_EXECUTABLE" : "D:/qt/5.15.2/mingw81_64/bin/rcc.exe",
+	"RCC_LIST_OPTIONS" : [ "--list" ],
+	"SETTINGS_FILE" : "E:/qos/build/CMakeFiles/qosbrowser_autogen.dir/AutoRcc_res_EWIEGA46WW_Used.txt",
+	"SOURCE" : "E:/qos/res.qrc",
+	"VERBOSITY" : 0
+}

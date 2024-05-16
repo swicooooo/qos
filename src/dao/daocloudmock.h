@@ -7,7 +7,7 @@
 class DaoCloudMock: public DaoClouds
 {
 public:
-    DaoCloudMock();
+    DaoCloudMock(const QString &path);
     QList<Bucket> buckets() override;
     QList<Bucket> login(const QString &secretId,const QString &secretKey, bool &flag)override;
 private:
