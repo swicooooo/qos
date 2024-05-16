@@ -1,0 +1,250 @@
+{
+	"BUILD_DIR" : "E:/qosbrowser/build/Desktop_Qt_5_15_2_MinGW_64_bit-Debug/qosbrowser_autogen",
+	"CMAKE_BINARY_DIR" : "E:/qosbrowser/build/Desktop_Qt_5_15_2_MinGW_64_bit-Debug",
+	"CMAKE_CURRENT_BINARY_DIR" : "E:/qosbrowser/build/Desktop_Qt_5_15_2_MinGW_64_bit-Debug",
+	"CMAKE_CURRENT_SOURCE_DIR" : "E:/qosbrowser",
+	"CMAKE_EXECUTABLE" : "D:/qt/Tools/CMake_64/bin/cmake.exe",
+	"CMAKE_LIST_FILES" : 
+	[
+		"E:/qosbrowser/CMakeLists.txt",
+		"E:/qosbrowser/build/Desktop_Qt_5_15_2_MinGW_64_bit-Debug/.qtc/package-manager/auto-setup.cmake",
+		"E:/qosbrowser/build/Desktop_Qt_5_15_2_MinGW_64_bit-Debug/CMakeFiles/3.27.7/CMakeSystem.cmake",
+		"D:/qt/Tools/CMake_64/share/cmake-3.27/Modules/CMakeSystemSpecificInitialize.cmake",
+		"D:/qt/Tools/CMake_64/share/cmake-3.27/Modules/Platform/Windows-Initialize.cmake",
+		"E:/qosbrowser/build/Desktop_Qt_5_15_2_MinGW_64_bit-Debug/CMakeFiles/3.27.7/CMakeCXXCompiler.cmake",
+		"D:/qt/Tools/CMake_64/share/cmake-3.27/Modules/CMakeSystemSpecificInformation.cmake",
+		"D:/qt/Tools/CMake_64/share/cmake-3.27/Modules/CMakeGenericSystem.cmake",
+		"D:/qt/Tools/CMake_64/share/cmake-3.27/Modules/CMakeInitializeConfigs.cmake",
+		"D:/qt/Tools/CMake_64/share/cmake-3.27/Modules/Platform/Windows.cmake",
+		"D:/qt/Tools/CMake_64/share/cmake-3.27/Modules/Platform/WindowsPaths.cmake",
+		"D:/qt/Tools/CMake_64/share/cmake-3.27/Modules/CMakeCXXInformation.cmake",
+		"D:/qt/Tools/CMake_64/share/cmake-3.27/Modules/CMakeLanguageInformation.cmake",
+		"D:/qt/Tools/CMake_64/share/cmake-3.27/Modules/Compiler/GNU-CXX.cmake",
+		"D:/qt/Tools/CMake_64/share/cmake-3.27/Modules/Compiler/GNU.cmake",
+		"D:/qt/Tools/CMake_64/share/cmake-3.27/Modules/Compiler/CMakeCommonCompilerMacros.cmake",
+		"D:/qt/Tools/CMake_64/share/cmake-3.27/Modules/Platform/Windows-GNU-CXX.cmake",
+		"D:/qt/Tools/CMake_64/share/cmake-3.27/Modules/Platform/Windows-GNU.cmake",
+		"E:/qosbrowser/build/Desktop_Qt_5_15_2_MinGW_64_bit-Debug/CMakeFiles/3.27.7/CMakeRCCompiler.cmake",
+		"D:/qt/Tools/CMake_64/share/cmake-3.27/Modules/CMakeRCInformation.cmake",
+		"D:/qt/Tools/CMake_64/share/cmake-3.27/Modules/Platform/Windows-windres.cmake",
+		"D:/qt/Tools/CMake_64/share/cmake-3.27/Modules/Platform/Windows-GNU-CXX-ABI.cmake",
+		"D:/qt/Tools/CMake_64/share/cmake-3.27/Modules/CMakeCommonLanguageInclude.cmake",
+		"D:/qt/5.15.2/mingw81_64/lib/cmake/Qt5/Qt5ConfigVersion.cmake",
+		"D:/qt/5.15.2/mingw81_64/lib/cmake/Qt5/Qt5Config.cmake",
+		"D:/qt/5.15.2/mingw81_64/lib/cmake/Qt5/Qt5ConfigVersion.cmake",
+		"D:/qt/5.15.2/mingw81_64/lib/cmake/Qt5/Qt5Config.cmake",
+		"D:/qt/5.15.2/mingw81_64/lib/cmake/Qt5/Qt5ModuleLocation.cmake",
+		"D:/qt/5.15.2/mingw81_64/lib/cmake/Qt5Widgets/Qt5WidgetsConfigVersion.cmake",
+		"D:/qt/5.15.2/mingw81_64/lib/cmake/Qt5Widgets/Qt5WidgetsConfig.cmake",
+		"D:/qt/5.15.2/mingw81_64/lib/cmake/Qt5Gui/Qt5GuiConfigVersion.cmake",
+		"D:/qt/5.15.2/mingw81_64/lib/cmake/Qt5Gui/Qt5GuiConfig.cmake",
+		"D:/qt/5.15.2/mingw81_64/lib/cmake/Qt5Core/Qt5CoreConfigVersion.cmake",
+		"D:/qt/5.15.2/mingw81_64/lib/cmake/Qt5Core/Qt5CoreConfig.cmake",
+		"D:/qt/5.15.2/mingw81_64/lib/cmake/Qt5Core/Qt5CoreConfigExtras.cmake",
+		"D:/qt/5.15.2/mingw81_64/lib/cmake/Qt5Core/Qt5CoreConfigExtrasMkspecDir.cmake",
+		"D:/qt/5.15.2/mingw81_64/lib/cmake/Qt5Core/Qt5CoreMacros.cmake",
+		"D:/qt/Tools/CMake_64/share/cmake-3.27/Modules/CMakeParseArguments.cmake",
+		"D:/qt/5.15.2/mingw81_64/lib/cmake/Qt5Gui/Qt5Gui_QGifPlugin.cmake",
+		"D:/qt/5.15.2/mingw81_64/lib/cmake/Qt5Gui/Qt5Gui_QICNSPlugin.cmake",
+		"D:/qt/5.15.2/mingw81_64/lib/cmake/Qt5Gui/Qt5Gui_QICOPlugin.cmake",
+		"D:/qt/5.15.2/mingw81_64/lib/cmake/Qt5Gui/Qt5Gui_QJpegPlugin.cmake",
+		"D:/qt/5.15.2/mingw81_64/lib/cmake/Qt5Gui/Qt5Gui_QMinimalIntegrationPlugin.cmake",
+		"D:/qt/5.15.2/mingw81_64/lib/cmake/Qt5Gui/Qt5Gui_QOffscreenIntegrationPlugin.cmake",
+		"D:/qt/5.15.2/mingw81_64/lib/cmake/Qt5Gui/Qt5Gui_QSvgIconPlugin.cmake",
+		"D:/qt/5.15.2/mingw81_64/lib/cmake/Qt5Gui/Qt5Gui_QSvgPlugin.cmake",
+		"D:/qt/5.15.2/mingw81_64/lib/cmake/Qt5Gui/Qt5Gui_QTgaPlugin.cmake",
+		"D:/qt/5.15.2/mingw81_64/lib/cmake/Qt5Gui/Qt5Gui_QTiffPlugin.cmake",
+		"D:/qt/5.15.2/mingw81_64/lib/cmake/Qt5Gui/Qt5Gui_QTuioTouchPlugin.cmake",
+		"D:/qt/5.15.2/mingw81_64/lib/cmake/Qt5Gui/Qt5Gui_QWbmpPlugin.cmake",
+		"D:/qt/5.15.2/mingw81_64/lib/cmake/Qt5Gui/Qt5Gui_QWebpPlugin.cmake",
+		"D:/qt/5.15.2/mingw81_64/lib/cmake/Qt5Gui/Qt5Gui_QWindowsDirect2DIntegrationPlugin.cmake",
+		"D:/qt/5.15.2/mingw81_64/lib/cmake/Qt5Gui/Qt5Gui_QWindowsIntegrationPlugin.cmake",
+		"D:/qt/5.15.2/mingw81_64/lib/cmake/Qt5Gui/Qt5Gui_QXdgDesktopPortalThemePlugin.cmake",
+		"D:/qt/5.15.2/mingw81_64/lib/cmake/Qt5Gui/Qt5GuiConfigExtras.cmake",
+		"D:/qt/5.15.2/mingw81_64/lib/cmake/Qt5Widgets/Qt5Widgets_QWindowsVistaStylePlugin.cmake",
+		"D:/qt/5.15.2/mingw81_64/lib/cmake/Qt5Widgets/Qt5WidgetsConfigExtras.cmake",
+		"D:/qt/5.15.2/mingw81_64/lib/cmake/Qt5Widgets/Qt5WidgetsMacros.cmake",
+		"D:/qt/Tools/CMake_64/share/cmake-3.27/Modules/CMakeParseArguments.cmake",
+		"D:/qt/Tools/CMake_64/share/cmake-3.27/Modules/GNUInstallDirs.cmake",
+		"E:/qosbrowser/res.qrc"
+	],
+	"CMAKE_SOURCE_DIR" : "E:/qosbrowser",
+	"DEP_FILE" : "E:/qosbrowser/build/Desktop_Qt_5_15_2_MinGW_64_bit-Debug/qosbrowser_autogen/deps",
+	"DEP_FILE_RULE_NAME" : "qosbrowser_autogen/timestamp",
+	"HEADERS" : 
+	[
+		[
+			"E:/qosbrowser/src/dao/DaoClouds.h",
+			"MU",
+			"QUKHX4KXBC/moc_DaoClouds.cpp",
+			null
+		],
+		[
+			"E:/qosbrowser/src/dao/daocloudmock.h",
+			"MU",
+			"QUKHX4KXBC/moc_daocloudmock.cpp",
+			null
+		],
+		[
+			"E:/qosbrowser/src/helper/FileHelper.h",
+			"MU",
+			"WROLH5MKTC/moc_FileHelper.cpp",
+			null
+		],
+		[
+			"E:/qosbrowser/src/helper/Singleton.h",
+			"MU",
+			"WROLH5MKTC/moc_Singleton.cpp",
+			null
+		],
+		[
+			"E:/qosbrowser/src/helper/commonformat.h",
+			"MU",
+			"WROLH5MKTC/moc_commonformat.cpp",
+			null
+		],
+		[
+			"E:/qosbrowser/src/helper/gateway.h",
+			"MU",
+			"WROLH5MKTC/moc_gateway.cpp",
+			null
+		],
+		[
+			"E:/qosbrowser/src/model/bucket.h",
+			"MU",
+			"VNQA4LF4BW/moc_bucket.cpp",
+			null
+		],
+		[
+			"E:/qosbrowser/src/model/bucketmodel.h",
+			"MU",
+			"VNQA4LF4BW/moc_bucketmodel.cpp",
+			null
+		],
+		[
+			"E:/qosbrowser/src/uicom/breadwidget.h",
+			"MU",
+			"AV6Y4X6HJP/moc_breadwidget.cpp",
+			null
+		],
+		[
+			"E:/qosbrowser/src/uicom/pagewidget.h",
+			"MU",
+			"AV6Y4X6HJP/moc_pagewidget.cpp",
+			null
+		],
+		[
+			"E:/qosbrowser/src/uidelegate/bucketdeleagte.h",
+			"MU",
+			"HHILEAQ7VD/moc_bucketdeleagte.cpp",
+			null
+		],
+		[
+			"E:/qosbrowser/src/uilogin/logindialog.h",
+			"MU",
+			"4RPRYGBBPX/moc_logindialog.cpp",
+			null
+		],
+		[
+			"E:/qosbrowser/src/uimain/bucketswidget.h",
+			"MU",
+			"IEAESOY2PW/moc_bucketswidget.cpp",
+			null
+		],
+		[
+			"E:/qosbrowser/src/uimain/mainwidget.h",
+			"MU",
+			"IEAESOY2PW/moc_mainwidget.cpp",
+			null
+		],
+		[
+			"E:/qosbrowser/src/uimain/objectswidget.h",
+			"MU",
+			"IEAESOY2PW/moc_objectswidget.cpp",
+			null
+		],
+		[
+			"E:/qosbrowser/src/uimain/toolbarwidget.h",
+			"MU",
+			"IEAESOY2PW/moc_toolbarwidget.cpp",
+			null
+		]
+	],
+	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
+	"INCLUDE_DIR" : "E:/qosbrowser/build/Desktop_Qt_5_15_2_MinGW_64_bit-Debug/qosbrowser_autogen/include",
+	"MOC_COMPILATION_FILE" : "E:/qosbrowser/build/Desktop_Qt_5_15_2_MinGW_64_bit-Debug/qosbrowser_autogen/mocs_compilation.cpp",
+	"MOC_DEFINITIONS" : [ "QT_CORE_LIB", "QT_GUI_LIB", "QT_WIDGETS_LIB" ],
+	"MOC_DEPEND_FILTERS" : 
+	[
+		[
+			"Q_PLUGIN_METADATA",
+			"[\n][ \t]*Q_PLUGIN_METADATA[ \t]*\\([^\\)]*FILE[ \t]*\"([^\"]+)\""
+		]
+	],
+	"MOC_INCLUDES" : 
+	[
+		"E:/qosbrowser/src/uimain",
+		"E:/qosbrowser/src/uicom",
+		"E:/qosbrowser/src/uilogin",
+		"E:/qosbrowser/src/uidelegate",
+		"E:/qosbrowser/src/helper",
+		"E:/qosbrowser/src/dao",
+		"E:/qosbrowser/src/model",
+		"E:/qosbrowser/src/plugins",
+		"D:/qt/5.15.2/mingw81_64/include",
+		"D:/qt/5.15.2/mingw81_64/include/QtWidgets",
+		"D:/qt/5.15.2/mingw81_64/include/QtGui",
+		"D:/qt/5.15.2/mingw81_64/include/QtANGLE",
+		"D:/qt/5.15.2/mingw81_64/include/QtCore",
+		"D:/qt/5.15.2/mingw81_64/mkspecs/win32-g++",
+		"D:/qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++",
+		"D:/qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32",
+		"D:/qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward",
+		"D:/qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include",
+		"D:/qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed",
+		"D:/qt/Tools/mingw810_64/x86_64-w64-mingw32/include"
+	],
+	"MOC_MACRO_NAMES" : [ "Q_OBJECT", "Q_GADGET", "Q_NAMESPACE", "Q_NAMESPACE_EXPORT" ],
+	"MOC_OPTIONS" : [],
+	"MOC_PATH_PREFIX" : false,
+	"MOC_PREDEFS_CMD" : 
+	[
+		"D:/qt/Tools/mingw810_64/bin/g++.exe",
+		"-std=gnu++17",
+		"-dM",
+		"-E",
+		"-c",
+		"D:/qt/Tools/CMake_64/share/cmake-3.27/Modules/CMakeCXXCompilerABI.cpp"
+	],
+	"MOC_PREDEFS_FILE" : "E:/qosbrowser/build/Desktop_Qt_5_15_2_MinGW_64_bit-Debug/qosbrowser_autogen/moc_predefs.h",
+	"MOC_RELAXED_MODE" : false,
+	"MOC_SKIP" : [],
+	"MULTI_CONFIG" : false,
+	"PARALLEL" : 8,
+	"PARSE_CACHE_FILE" : "E:/qosbrowser/build/Desktop_Qt_5_15_2_MinGW_64_bit-Debug/CMakeFiles/qosbrowser_autogen.dir/ParseCache.txt",
+	"QT_MOC_EXECUTABLE" : "D:/qt/5.15.2/mingw81_64/bin/moc.exe",
+	"QT_UIC_EXECUTABLE" : "D:/qt/5.15.2/mingw81_64/bin/uic.exe",
+	"QT_VERSION_MAJOR" : 5,
+	"QT_VERSION_MINOR" : 15,
+	"SETTINGS_FILE" : "E:/qosbrowser/build/Desktop_Qt_5_15_2_MinGW_64_bit-Debug/CMakeFiles/qosbrowser_autogen.dir/AutogenUsed.txt",
+	"SOURCES" : 
+	[
+		[ "E:/qosbrowser/main.cpp", "MU", null ],
+		[ "E:/qosbrowser/src/dao/daocloudmock.cpp", "MU", null ],
+		[ "E:/qosbrowser/src/helper/gateway.cpp", "MU", null ],
+		[ "E:/qosbrowser/src/model/bucketmodel.cpp", "MU", null ],
+		[ "E:/qosbrowser/src/uicom/breadwidget.cpp", "MU", null ],
+		[ "E:/qosbrowser/src/uicom/pagewidget.cpp", "MU", null ],
+		[ "E:/qosbrowser/src/uidelegate/bucketdeleagte.cpp", "MU", null ],
+		[ "E:/qosbrowser/src/uilogin/logindialog.cpp", "MU", null ],
+		[ "E:/qosbrowser/src/uimain/bucketswidget.cpp", "MU", null ],
+		[ "E:/qosbrowser/src/uimain/mainwidget.cpp", "MU", null ],
+		[ "E:/qosbrowser/src/uimain/objectswidget.cpp", "MU", null ],
+		[ "E:/qosbrowser/src/uimain/toolbarwidget.cpp", "MU", null ]
+	],
+	"UIC_OPTIONS" : [],
+	"UIC_SEARCH_PATHS" : [],
+	"UIC_SKIP" : [],
+	"UIC_UI_FILES" : [],
+	"VERBOSITY" : 0
+}

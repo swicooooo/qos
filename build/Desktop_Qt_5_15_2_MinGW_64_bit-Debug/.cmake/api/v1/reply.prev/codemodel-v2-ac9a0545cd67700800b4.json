@@ -1,0 +1,79 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-2326a179bc6dbe2fa0bc.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "qosbrowser",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "qosbrowser::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-qosbrowser-Debug-29112486e4d8c41a1b93.json",
+					"name" : "qosbrowser",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "qosbrowser_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-qosbrowser_autogen-Debug-4562941e81723c1bcc7f.json",
+					"name" : "qosbrowser_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "qosbrowser_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-qosbrowser_autogen_timestamp_deps-Debug-0a7d660ba4c5c247c2b3.json",
+					"name" : "qosbrowser_autogen_timestamp_deps",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "E:/qosbrowser/build/Desktop_Qt_5_15_2_MinGW_64_bit-Debug",
+		"source" : "E:/qosbrowser"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}
