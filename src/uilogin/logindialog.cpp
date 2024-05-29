@@ -7,13 +7,14 @@
 #include <gateway.h>
 
 LoginDialog::LoginDialog(QWidget *parent)
-    : QDialog(parent)
+    : QosDialog(parent)
     , ui(new Ui::LoginDialog)
 {
-    ui->setupUi(this);
-    this->setWindowFlags(Qt::CustomizeWindowHint | Qt::FramelessWindowHint);    // 去除边框和标题栏
-    ui->lineEditSecretkey->installEventFilter(this);// 为lineEditSecretkey安装父类event过滤器
-    ui->labelTitle->setProperty("style", "h1");     // 添加属性h1
+    ui->setupUi(body());
+    ui->lineEditSecretkey->installEventFilter(this);     // 为lineEditSecretkey安装父类event过滤器
+
+    // 当该组件加入到qosdialog的body中时，需要手动连接登录信号槽
+    connect(ui->pushButtonLogin, &QPushButton::clicked, this, &LoginDialog::onPushButtonLoginClicked);
 }
 
 LoginDialog::~LoginDialog()
@@ -39,27 +40,7 @@ bool LoginDialog::eventFilter(QObject *watched, QEvent *event)
     return QDialog::eventFilter(watched, event);
 }
 
-void LoginDialog::mousePressEvent(QMouseEvent *event)
-{
-    if(event->buttons() & Qt::LeftButton)
-    {
-        startPos_ = event->pos();   // 记录起始pos
-    }
-    QDialog::mousePressEvent(event);
-}
-
-void LoginDialog::mouseMoveEvent(QMouseEvent *event)
-{
-    // 计算鼠标点击左键时移动的pos+当前窗口的pos
-    if(event->buttons() & Qt::LeftButton)
-    {
-        QPoint targetPos = event->pos() - startPos_ + this->pos();
-        this->move(targetPos);
-    }
-    QDialog::mouseMoveEvent(event);
-}
-
-void LoginDialog::on_pushButtonLogin_clicked()
+void LoginDialog::onPushButtonLoginClicked()
 {
     QJsonObject params;
     params["secretId"] = ui->lineEditSecretid->text().trimmed();

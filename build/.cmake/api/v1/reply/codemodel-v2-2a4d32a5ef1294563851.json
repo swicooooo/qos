@@ -7,7 +7,7 @@
 				{
 					"build" : ".",
 					"hasInstallRule" : true,
-					"jsonFile" : "directory-.-Debug-877c8b64f5e7fd9e544d.json",
+					"jsonFile" : "directory-.-Debug-8d7b8fe7d28786f8a51b.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.5"
@@ -44,7 +44,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "qosbrowser::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-qosbrowser-Debug-4d141474a8ebad43092e.json",
+					"jsonFile" : "target-qosbrowser-Debug-c271e6b1287dc8d363e0.json",
 					"name" : "qosbrowser",
 					"projectIndex" : 0
 				},

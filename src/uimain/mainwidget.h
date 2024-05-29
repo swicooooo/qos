@@ -1,13 +1,13 @@
 #ifndef MAINWIDGET_H
 #define MAINWIDGET_H
 
-#include <QWidget>
+#include <QosDialog.h>
 
 namespace Ui {
 class MainWidget;
 }
 
-class MainWidget : public QWidget
+class MainWidget : public QosDialog
 {
     Q_OBJECT
 

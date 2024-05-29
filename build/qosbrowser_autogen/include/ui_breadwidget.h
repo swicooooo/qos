@@ -12,9 +12,7 @@
 #include <QtCore/QVariant>
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QGridLayout>
-#include <QtWidgets/QHBoxLayout>
-#include <QtWidgets/QPushButton>
-#include <QtWidgets/QSpacerItem>
+#include <QtWidgets/QListView>
 #include <QtWidgets/QWidget>
 
 QT_BEGIN_NAMESPACE
@@ -23,32 +21,23 @@ class Ui_BreadWidget
 {
 public:
     QGridLayout *gridLayout;
-    QHBoxLayout *horizontalLayout;
-    QPushButton *pushButton;
-    QSpacerItem *horizontalSpacer;
+    QListView *listView;
 
     void setupUi(QWidget *BreadWidget)
     {
         if (BreadWidget->objectName().isEmpty())
             BreadWidget->setObjectName(QString::fromUtf8("BreadWidget"));
-        BreadWidget->resize(476, 52);
+        BreadWidget->resize(761, 85);
         gridLayout = new QGridLayout(BreadWidget);
         gridLayout->setObjectName(QString::fromUtf8("gridLayout"));
-        gridLayout->setContentsMargins(12, 0, 0, 0);
-        horizontalLayout = new QHBoxLayout();
-        horizontalLayout->setObjectName(QString::fromUtf8("horizontalLayout"));
-        pushButton = new QPushButton(BreadWidget);
-        pushButton->setObjectName(QString::fromUtf8("pushButton"));
-        pushButton->setMaximumSize(QSize(60, 16777215));
+        gridLayout->setContentsMargins(4, 4, 4, 4);
+        listView = new QListView(BreadWidget);
+        listView->setObjectName(QString::fromUtf8("listView"));
+        listView->setLayoutDirection(Qt::LeftToRight);
+        listView->setEditTriggers(QAbstractItemView::NoEditTriggers);
+        listView->setFlow(QListView::LeftToRight);
 
-        horizontalLayout->addWidget(pushButton);
-
-        horizontalSpacer = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
-
-        horizontalLayout->addItem(horizontalSpacer);
-
-
-        gridLayout->addLayout(horizontalLayout, 0, 0, 1, 1);
+        gridLayout->addWidget(listView, 0, 0, 1, 1);
 
 
         retranslateUi(BreadWidget);
@@ -59,7 +48,6 @@ public:
     void retranslateUi(QWidget *BreadWidget)
     {
         BreadWidget->setWindowTitle(QCoreApplication::translate("BreadWidget", "Form", nullptr));
-        pushButton->setText(QCoreApplication::translate("BreadWidget", "\345\255\230\345\202\250\346\241\266", nullptr));
     } // retranslateUi
 
 };

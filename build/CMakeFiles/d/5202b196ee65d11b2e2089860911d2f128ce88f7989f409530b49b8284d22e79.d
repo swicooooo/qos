@@ -1,4 +1,5 @@
 qosbrowser_autogen/timestamp: \
+  D:/qt/5.15.2/mingw81_64/include/QtCore/QObject \
   D:/qt/5.15.2/mingw81_64/include/QtCore/qabstractitemmodel.h \
   D:/qt/5.15.2/mingw81_64/include/QtCore/qalgorithms.h \
   D:/qt/5.15.2/mingw81_64/include/QtCore/qarraydata.h \
@@ -72,12 +73,17 @@ qosbrowser_autogen/timestamp: \
   D:/qt/5.15.2/mingw81_64/include/QtGui/qmatrix.h \
   D:/qt/5.15.2/mingw81_64/include/QtGui/qpaintdevice.h \
   D:/qt/5.15.2/mingw81_64/include/QtGui/qpalette.h \
+  D:/qt/5.15.2/mingw81_64/include/QtGui/qpen.h \
   D:/qt/5.15.2/mingw81_64/include/QtGui/qpixelformat.h \
   D:/qt/5.15.2/mingw81_64/include/QtGui/qpixmap.h \
   D:/qt/5.15.2/mingw81_64/include/QtGui/qpolygon.h \
   D:/qt/5.15.2/mingw81_64/include/QtGui/qregion.h \
   D:/qt/5.15.2/mingw81_64/include/QtGui/qrgb.h \
   D:/qt/5.15.2/mingw81_64/include/QtGui/qrgba64.h \
+  D:/qt/5.15.2/mingw81_64/include/QtGui/qstandarditemmodel.h \
+  D:/qt/5.15.2/mingw81_64/include/QtGui/qtextcursor.h \
+  D:/qt/5.15.2/mingw81_64/include/QtGui/qtextformat.h \
+  D:/qt/5.15.2/mingw81_64/include/QtGui/qtextoption.h \
   D:/qt/5.15.2/mingw81_64/include/QtGui/qtgui-config.h \
   D:/qt/5.15.2/mingw81_64/include/QtGui/qtguiglobal.h \
   D:/qt/5.15.2/mingw81_64/include/QtGui/qtransform.h \
@@ -85,6 +91,7 @@ qosbrowser_autogen/timestamp: \
   D:/qt/5.15.2/mingw81_64/include/QtGui/qwindowdefs.h \
   D:/qt/5.15.2/mingw81_64/include/QtGui/qwindowdefs_win.h \
   D:/qt/5.15.2/mingw81_64/include/QtWidgets/QDialog \
+  D:/qt/5.15.2/mingw81_64/include/QtWidgets/QLineEdit \
   D:/qt/5.15.2/mingw81_64/include/QtWidgets/QStyledItemDelegate \
   D:/qt/5.15.2/mingw81_64/include/QtWidgets/QWidget \
   D:/qt/5.15.2/mingw81_64/include/QtWidgets/qabstractitemdelegate.h \
@@ -92,6 +99,7 @@ qosbrowser_autogen/timestamp: \
   D:/qt/5.15.2/mingw81_64/include/QtWidgets/qabstractspinbox.h \
   D:/qt/5.15.2/mingw81_64/include/QtWidgets/qdialog.h \
   D:/qt/5.15.2/mingw81_64/include/QtWidgets/qframe.h \
+  D:/qt/5.15.2/mingw81_64/include/QtWidgets/qlineedit.h \
   D:/qt/5.15.2/mingw81_64/include/QtWidgets/qrubberband.h \
   D:/qt/5.15.2/mingw81_64/include/QtWidgets/qsizepolicy.h \
   D:/qt/5.15.2/mingw81_64/include/QtWidgets/qslider.h \
@@ -136,79 +144,19 @@ qosbrowser_autogen/timestamp: \
   D:/qt/5.15.2/mingw81_64/lib/cmake/Qt5Widgets/Qt5WidgetsMacros.cmake \
   D:/qt/5.15.2/mingw81_64/lib/cmake/Qt5Widgets/Qt5Widgets_QWindowsVistaStylePlugin.cmake \
   D:/qt/Tools/CMake_64/bin/cmake.exe \
-  D:/qt/Tools/CMake_64/share/cmake-3.27/Modules/CMakeCXXCompiler.cmake.in \
-  D:/qt/Tools/CMake_64/share/cmake-3.27/Modules/CMakeCXXCompilerABI.cpp \
   D:/qt/Tools/CMake_64/share/cmake-3.27/Modules/CMakeCXXInformation.cmake \
   D:/qt/Tools/CMake_64/share/cmake-3.27/Modules/CMakeCommonLanguageInclude.cmake \
-  D:/qt/Tools/CMake_64/share/cmake-3.27/Modules/CMakeCompilerIdDetection.cmake \
-  D:/qt/Tools/CMake_64/share/cmake-3.27/Modules/CMakeDetermineCXXCompiler.cmake \
-  D:/qt/Tools/CMake_64/share/cmake-3.27/Modules/CMakeDetermineCompileFeatures.cmake \
-  D:/qt/Tools/CMake_64/share/cmake-3.27/Modules/CMakeDetermineCompiler.cmake \
-  D:/qt/Tools/CMake_64/share/cmake-3.27/Modules/CMakeDetermineCompilerABI.cmake \
-  D:/qt/Tools/CMake_64/share/cmake-3.27/Modules/CMakeDetermineCompilerId.cmake \
-  D:/qt/Tools/CMake_64/share/cmake-3.27/Modules/CMakeDetermineRCCompiler.cmake \
-  D:/qt/Tools/CMake_64/share/cmake-3.27/Modules/CMakeDetermineSystem.cmake \
-  D:/qt/Tools/CMake_64/share/cmake-3.27/Modules/CMakeFindBinUtils.cmake \
   D:/qt/Tools/CMake_64/share/cmake-3.27/Modules/CMakeGenericSystem.cmake \
   D:/qt/Tools/CMake_64/share/cmake-3.27/Modules/CMakeInitializeConfigs.cmake \
   D:/qt/Tools/CMake_64/share/cmake-3.27/Modules/CMakeLanguageInformation.cmake \
-  D:/qt/Tools/CMake_64/share/cmake-3.27/Modules/CMakeNinjaFindMake.cmake \
   D:/qt/Tools/CMake_64/share/cmake-3.27/Modules/CMakeParseArguments.cmake \
-  D:/qt/Tools/CMake_64/share/cmake-3.27/Modules/CMakeParseImplicitIncludeInfo.cmake \
-  D:/qt/Tools/CMake_64/share/cmake-3.27/Modules/CMakeParseImplicitLinkInfo.cmake \
-  D:/qt/Tools/CMake_64/share/cmake-3.27/Modules/CMakeParseLibraryArchitecture.cmake \
-  D:/qt/Tools/CMake_64/share/cmake-3.27/Modules/CMakeRCCompiler.cmake.in \
   D:/qt/Tools/CMake_64/share/cmake-3.27/Modules/CMakeRCInformation.cmake \
-  D:/qt/Tools/CMake_64/share/cmake-3.27/Modules/CMakeSystem.cmake.in \
   D:/qt/Tools/CMake_64/share/cmake-3.27/Modules/CMakeSystemSpecificInformation.cmake \
   D:/qt/Tools/CMake_64/share/cmake-3.27/Modules/CMakeSystemSpecificInitialize.cmake \
-  D:/qt/Tools/CMake_64/share/cmake-3.27/Modules/CMakeTestCXXCompiler.cmake \
-  D:/qt/Tools/CMake_64/share/cmake-3.27/Modules/CMakeTestCompilerCommon.cmake \
-  D:/qt/Tools/CMake_64/share/cmake-3.27/Modules/CMakeTestRCCompiler.cmake \
-  D:/qt/Tools/CMake_64/share/cmake-3.27/Modules/Compiler/ADSP-DetermineCompiler.cmake \
-  D:/qt/Tools/CMake_64/share/cmake-3.27/Modules/Compiler/ARMCC-DetermineCompiler.cmake \
-  D:/qt/Tools/CMake_64/share/cmake-3.27/Modules/Compiler/ARMClang-DetermineCompiler.cmake \
-  D:/qt/Tools/CMake_64/share/cmake-3.27/Modules/Compiler/AppleClang-DetermineCompiler.cmake \
-  D:/qt/Tools/CMake_64/share/cmake-3.27/Modules/Compiler/Borland-DetermineCompiler.cmake \
   D:/qt/Tools/CMake_64/share/cmake-3.27/Modules/Compiler/CMakeCommonCompilerMacros.cmake \
-  D:/qt/Tools/CMake_64/share/cmake-3.27/Modules/Compiler/Clang-DetermineCompiler.cmake \
-  D:/qt/Tools/CMake_64/share/cmake-3.27/Modules/Compiler/Clang-DetermineCompilerInternal.cmake \
-  D:/qt/Tools/CMake_64/share/cmake-3.27/Modules/Compiler/Comeau-CXX-DetermineCompiler.cmake \
-  D:/qt/Tools/CMake_64/share/cmake-3.27/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake \
-  D:/qt/Tools/CMake_64/share/cmake-3.27/Modules/Compiler/Cray-DetermineCompiler.cmake \
-  D:/qt/Tools/CMake_64/share/cmake-3.27/Modules/Compiler/Embarcadero-DetermineCompiler.cmake \
-  D:/qt/Tools/CMake_64/share/cmake-3.27/Modules/Compiler/Fujitsu-DetermineCompiler.cmake \
-  D:/qt/Tools/CMake_64/share/cmake-3.27/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake \
-  D:/qt/Tools/CMake_64/share/cmake-3.27/Modules/Compiler/GHS-DetermineCompiler.cmake \
-  D:/qt/Tools/CMake_64/share/cmake-3.27/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake \
   D:/qt/Tools/CMake_64/share/cmake-3.27/Modules/Compiler/GNU-CXX.cmake \
-  D:/qt/Tools/CMake_64/share/cmake-3.27/Modules/Compiler/GNU-FindBinUtils.cmake \
   D:/qt/Tools/CMake_64/share/cmake-3.27/Modules/Compiler/GNU.cmake \
-  D:/qt/Tools/CMake_64/share/cmake-3.27/Modules/Compiler/HP-CXX-DetermineCompiler.cmake \
-  D:/qt/Tools/CMake_64/share/cmake-3.27/Modules/Compiler/IAR-DetermineCompiler.cmake \
-  D:/qt/Tools/CMake_64/share/cmake-3.27/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake \
-  D:/qt/Tools/CMake_64/share/cmake-3.27/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake \
-  D:/qt/Tools/CMake_64/share/cmake-3.27/Modules/Compiler/Intel-DetermineCompiler.cmake \
-  D:/qt/Tools/CMake_64/share/cmake-3.27/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake \
-  D:/qt/Tools/CMake_64/share/cmake-3.27/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake \
-  D:/qt/Tools/CMake_64/share/cmake-3.27/Modules/Compiler/MSVC-DetermineCompiler.cmake \
-  D:/qt/Tools/CMake_64/share/cmake-3.27/Modules/Compiler/NVHPC-DetermineCompiler.cmake \
-  D:/qt/Tools/CMake_64/share/cmake-3.27/Modules/Compiler/NVIDIA-DetermineCompiler.cmake \
-  D:/qt/Tools/CMake_64/share/cmake-3.27/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake \
-  D:/qt/Tools/CMake_64/share/cmake-3.27/Modules/Compiler/PGI-DetermineCompiler.cmake \
-  D:/qt/Tools/CMake_64/share/cmake-3.27/Modules/Compiler/PathScale-DetermineCompiler.cmake \
-  D:/qt/Tools/CMake_64/share/cmake-3.27/Modules/Compiler/SCO-DetermineCompiler.cmake \
-  D:/qt/Tools/CMake_64/share/cmake-3.27/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake \
-  D:/qt/Tools/CMake_64/share/cmake-3.27/Modules/Compiler/TI-DetermineCompiler.cmake \
-  D:/qt/Tools/CMake_64/share/cmake-3.27/Modules/Compiler/Tasking-DetermineCompiler.cmake \
-  D:/qt/Tools/CMake_64/share/cmake-3.27/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake \
-  D:/qt/Tools/CMake_64/share/cmake-3.27/Modules/Compiler/Watcom-DetermineCompiler.cmake \
-  D:/qt/Tools/CMake_64/share/cmake-3.27/Modules/Compiler/XL-CXX-DetermineCompiler.cmake \
-  D:/qt/Tools/CMake_64/share/cmake-3.27/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake \
-  D:/qt/Tools/CMake_64/share/cmake-3.27/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake \
   D:/qt/Tools/CMake_64/share/cmake-3.27/Modules/GNUInstallDirs.cmake \
-  D:/qt/Tools/CMake_64/share/cmake-3.27/Modules/Internal/FeatureTesting.cmake \
-  D:/qt/Tools/CMake_64/share/cmake-3.27/Modules/Platform/Windows-Determine-CXX.cmake \
   D:/qt/Tools/CMake_64/share/cmake-3.27/Modules/Platform/Windows-GNU-CXX-ABI.cmake \
   D:/qt/Tools/CMake_64/share/cmake-3.27/Modules/Platform/Windows-GNU-CXX.cmake \
   D:/qt/Tools/CMake_64/share/cmake-3.27/Modules/Platform/Windows-GNU.cmake \
@@ -401,6 +349,7 @@ qosbrowser_autogen/timestamp: \
   E:/qos/src/dao/daocloudmock.cpp \
   E:/qos/src/dao/daocloudmock.h \
   E:/qos/src/helper/FileHelper.h \
+  E:/qos/src/helper/Public.h \
   E:/qos/src/helper/Singleton.h \
   E:/qos/src/helper/commonformat.h \
   E:/qos/src/helper/gateway.cpp \
@@ -410,12 +359,20 @@ qosbrowser_autogen/timestamp: \
   E:/qos/src/model/bucketmodel.h \
   E:/qos/src/plugins/qosplugin.cpp \
   E:/qos/src/plugins/qosplugin.h \
+  E:/qos/src/uicom/BreadWidget.h \
+  E:/qos/src/uicom/basedialog.cpp \
+  E:/qos/src/uicom/basedialog.h \
+  E:/qos/src/uicom/basedialog.ui \
   E:/qos/src/uicom/breadwidget.cpp \
-  E:/qos/src/uicom/breadwidget.h \
   E:/qos/src/uicom/breadwidget.ui \
+  E:/qos/src/uicom/comboline.cpp \
+  E:/qos/src/uicom/comboline.h \
   E:/qos/src/uicom/pagewidget.cpp \
   E:/qos/src/uicom/pagewidget.h \
   E:/qos/src/uicom/pagewidget.ui \
+  E:/qos/src/uicom/qosdialog.cpp \
+  E:/qos/src/uicom/qosdialog.h \
+  E:/qos/src/uicom/qosdialog.ui \
   E:/qos/src/uidelegate/bucketdeleagte.cpp \
   E:/qos/src/uidelegate/bucketdeleagte.h \
   E:/qos/src/uilogin/logindialog.cpp \

@@ -256,4 +256,6 @@ E:/qos/build/qosbrowser_autogen/4RPRYGBBPX/moc_logindialog.cpp: E:/qos/src/uilog
   D:/qt/Tools/mingw810_64/x86_64-w64-mingw32/include/sys/types.h \
   D:/qt/Tools/mingw810_64/x86_64-w64-mingw32/include/vadefs.h \
   D:/qt/Tools/mingw810_64/x86_64-w64-mingw32/include/wchar.h \
-  D:/qt/Tools/mingw810_64/x86_64-w64-mingw32/include/wctype.h
+  D:/qt/Tools/mingw810_64/x86_64-w64-mingw32/include/wctype.h \
+  E:/qos/src/uicom/BaseDialog.h \
+  E:/qos/src/uicom/QosDialog.h

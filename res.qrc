@@ -3,5 +3,6 @@
         <file>static/default.qss</file>
         <file>static/bucketsTest.json</file>
         <file>static/logo.png</file>
+        <file>static/breadIcon.svg</file>
     </qresource>
 </RCC>

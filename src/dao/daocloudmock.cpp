@@ -21,6 +21,7 @@ QList<Bucket> DaoCloudMock::buckets()
         bucket.location = v["location"].toString();
         bucket.createDate = v["create_date"].toString();
         res.append(bucket);
+        qDebug() << bucket.name << bucket.location << bucket.createDate;
     }
     return res;
 }

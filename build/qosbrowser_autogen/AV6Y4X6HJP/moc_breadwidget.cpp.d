@@ -1,5 +1,6 @@
-E:/qos/build/qosbrowser_autogen/AV6Y4X6HJP/moc_breadwidget.cpp: E:/qos/src/uicom/breadwidget.h \
+E:/qos/build/qosbrowser_autogen/AV6Y4X6HJP/moc_BreadWidget.cpp: E:/qos/src/uicom/BreadWidget.h \
   E:/qos/build/qosbrowser_autogen/moc_predefs.h \
+  D:/qt/5.15.2/mingw81_64/include/QtCore/qabstractitemmodel.h \
   D:/qt/5.15.2/mingw81_64/include/QtCore/qalgorithms.h \
   D:/qt/5.15.2/mingw81_64/include/QtCore/qarraydata.h \
   D:/qt/5.15.2/mingw81_64/include/QtCore/qatomic.h \
@@ -24,6 +25,7 @@ E:/qos/build/qosbrowser_autogen/AV6Y4X6HJP/moc_breadwidget.cpp: E:/qos/src/uicom
   D:/qt/5.15.2/mingw81_64/include/QtCore/qline.h \
   D:/qt/5.15.2/mingw81_64/include/QtCore/qlist.h \
   D:/qt/5.15.2/mingw81_64/include/QtCore/qlogging.h \
+  D:/qt/5.15.2/mingw81_64/include/QtCore/qmap.h \
   D:/qt/5.15.2/mingw81_64/include/QtCore/qmargins.h \
   D:/qt/5.15.2/mingw81_64/include/QtCore/qmetatype.h \
   D:/qt/5.15.2/mingw81_64/include/QtCore/qnamespace.h \
@@ -53,6 +55,7 @@ E:/qos/build/qosbrowser_autogen/AV6Y4X6HJP/moc_breadwidget.cpp: E:/qos/src/uicom
   D:/qt/5.15.2/mingw81_64/include/QtCore/qsystemdetection.h \
   D:/qt/5.15.2/mingw81_64/include/QtCore/qtcore-config.h \
   D:/qt/5.15.2/mingw81_64/include/QtCore/qtypeinfo.h \
+  D:/qt/5.15.2/mingw81_64/include/QtCore/qvariant.h \
   D:/qt/5.15.2/mingw81_64/include/QtCore/qvarlengtharray.h \
   D:/qt/5.15.2/mingw81_64/include/QtCore/qvector.h \
   D:/qt/5.15.2/mingw81_64/include/QtCore/qversiontagging.h \
@@ -62,6 +65,7 @@ E:/qos/build/qosbrowser_autogen/AV6Y4X6HJP/moc_breadwidget.cpp: E:/qos/src/uicom
   D:/qt/5.15.2/mingw81_64/include/QtGui/qfont.h \
   D:/qt/5.15.2/mingw81_64/include/QtGui/qfontinfo.h \
   D:/qt/5.15.2/mingw81_64/include/QtGui/qfontmetrics.h \
+  D:/qt/5.15.2/mingw81_64/include/QtGui/qicon.h \
   D:/qt/5.15.2/mingw81_64/include/QtGui/qimage.h \
   D:/qt/5.15.2/mingw81_64/include/QtGui/qkeysequence.h \
   D:/qt/5.15.2/mingw81_64/include/QtGui/qmatrix.h \
@@ -73,6 +77,7 @@ E:/qos/build/qosbrowser_autogen/AV6Y4X6HJP/moc_breadwidget.cpp: E:/qos/src/uicom
   D:/qt/5.15.2/mingw81_64/include/QtGui/qregion.h \
   D:/qt/5.15.2/mingw81_64/include/QtGui/qrgb.h \
   D:/qt/5.15.2/mingw81_64/include/QtGui/qrgba64.h \
+  D:/qt/5.15.2/mingw81_64/include/QtGui/qstandarditemmodel.h \
   D:/qt/5.15.2/mingw81_64/include/QtGui/qtgui-config.h \
   D:/qt/5.15.2/mingw81_64/include/QtGui/qtguiglobal.h \
   D:/qt/5.15.2/mingw81_64/include/QtGui/qtransform.h \

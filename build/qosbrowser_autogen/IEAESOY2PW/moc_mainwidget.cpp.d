@@ -78,7 +78,8 @@ E:/qos/build/qosbrowser_autogen/IEAESOY2PW/moc_mainwidget.cpp: E:/qos/src/uimain
   D:/qt/5.15.2/mingw81_64/include/QtGui/qtransform.h \
   D:/qt/5.15.2/mingw81_64/include/QtGui/qwindowdefs.h \
   D:/qt/5.15.2/mingw81_64/include/QtGui/qwindowdefs_win.h \
-  D:/qt/5.15.2/mingw81_64/include/QtWidgets/QWidget \
+  D:/qt/5.15.2/mingw81_64/include/QtWidgets/QDialog \
+  D:/qt/5.15.2/mingw81_64/include/QtWidgets/qdialog.h \
   D:/qt/5.15.2/mingw81_64/include/QtWidgets/qsizepolicy.h \
   D:/qt/5.15.2/mingw81_64/include/QtWidgets/qtwidgets-config.h \
   D:/qt/5.15.2/mingw81_64/include/QtWidgets/qtwidgetsglobal.h \
@@ -255,4 +256,6 @@ E:/qos/build/qosbrowser_autogen/IEAESOY2PW/moc_mainwidget.cpp: E:/qos/src/uimain
   D:/qt/Tools/mingw810_64/x86_64-w64-mingw32/include/sys/types.h \
   D:/qt/Tools/mingw810_64/x86_64-w64-mingw32/include/vadefs.h \
   D:/qt/Tools/mingw810_64/x86_64-w64-mingw32/include/wchar.h \
-  D:/qt/Tools/mingw810_64/x86_64-w64-mingw32/include/wctype.h
+  D:/qt/Tools/mingw810_64/x86_64-w64-mingw32/include/wctype.h \
+  E:/qos/src/uicom/BaseDialog.h \
+  E:/qos/src/uicom/QosDialog.h

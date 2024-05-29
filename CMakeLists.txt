@@ -52,6 +52,10 @@ else()
             src/dao/DaoClouds.h
             src/dao/daocloudmock.h src/dao/daocloudmock.cpp
             src/plugins/qosplugin.h src/plugins/qosplugin.cpp
+            src/uicom/basedialog.h src/uicom/basedialog.cpp src/uicom/basedialog.ui
+            src/helper/Public.h
+            src/uicom/qosdialog.h src/uicom/qosdialog.cpp src/uicom/qosdialog.ui
+            src/uicom/comboline.h src/uicom/comboline.cpp
         )
     endif()
 endif()

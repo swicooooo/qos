@@ -1,13 +1,13 @@
 #ifndef LOGINDIALOG_H
 #define LOGINDIALOG_H
 
-#include <QDialog>
+#include <QosDialog.h>
 
 namespace Ui {
 class LoginDialog;
 }
 
-class LoginDialog : public QDialog
+class LoginDialog : public QosDialog
 {
     Q_OBJECT
 
@@ -16,11 +16,9 @@ public:
     ~LoginDialog();
 protected:
     bool eventFilter(QObject *watched, QEvent *event) override;
-    void mousePressEvent(QMouseEvent *event) override;
-    void mouseMoveEvent(QMouseEvent *event) override;
 
 private slots:
-    void on_pushButtonLogin_clicked();
+    void onPushButtonLoginClicked();
     void onLoginCallback(bool flag);
 
 private:
