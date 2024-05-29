@@ -21,6 +21,8 @@ void ComboLine::setWords(const QStringList &words)
     QCompleter *com = new QCompleter(words, this);
     com->popup()->setHorizontalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
     com->popup()->setVerticalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
+    // 当QCompleter发出activated信号时，会再次发出itemSelected信号传递给父控件,
+    // 父控件再捕捉信号实现相关的槽函数即可
     connect(com, QOverload<const QString&>::of(&QCompleter::activated),
         [=](const QString &text){
             emit itemSelected(text);

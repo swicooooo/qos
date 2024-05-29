@@ -43,7 +43,7 @@ private:
 
     Ui::PageWidget *ui;
     int totalRow_;          // 总共条数
-    int currentPage_;       // 当前页码
+    int currentPage_;       // 当前页码,不能与下者混为一谈
     int maxRowPerPage_;     // 每页最大条数
 };
 

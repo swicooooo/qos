@@ -16,6 +16,9 @@ PageWidget::PageWidget(QWidget *parent)
     // 关联信号
     connect(ui->pushButtonPre, &QPushButton::clicked, this, &PageWidget::pre);
     connect(ui->pushButtonNext, &QPushButton::clicked, this, &PageWidget::next);
+    // 从ComboLine被点击后发出信号itemSelected，后绑定槽
+    connect(ui->lineEditCurrentPage,&ComboLine::itemSelected,this,&PageWidget::onCurrentPageSelected);
+    connect(ui->lineEditMaxRows,&ComboLine::itemSelected,this,&PageWidget::onMaxRowItemSelected);
 }
 
 PageWidget::~PageWidget()
@@ -40,7 +43,8 @@ int PageWidget::currentPage() const
 
 int PageWidget::pageCount() const
 {
-    return totalRow()==0?1:qCeil(totalRow()/(float)maxRowPerPage());  // 向上取整
+    // 页数=总条数/每页最大条数，向上取整
+    return totalRow()==0?1:qCeil(totalRow()/(float)maxRowPerPage());
 }
 
 int PageWidget::isFirstPage() const
@@ -55,7 +59,7 @@ int PageWidget::isLastPage() const
 
 void PageWidget::setTotalRow(int newTotalRow)
 {
-    // 更新总共的条数,更新页码
+    // 更新总条数,更新页码
     totalRow_ = newTotalRow;
     ui->labelTotal->setText(QString("共:%1条, 每页").arg(newTotalRow));
     reset();
@@ -64,7 +68,7 @@ void PageWidget::setTotalRow(int newTotalRow)
 void PageWidget::setMaxRowPerPage(int rows)
 {
     // 搜索lineEditMaxRows提供的最大显示行数,如果符合则重置页码状态
-    QStringList words = ui->lineEditCurrentPage->getWords();
+    QStringList words = ui->lineEditMaxRows->getWords();
     for (const auto &num : words)
     {
         if(num.toInt() == rows)
@@ -120,9 +124,9 @@ void PageWidget::onMaxRowItemSelected(const QString &text)
 
 void PageWidget::setPageCount()
 {
-    int count = pageCount();
-    ui->labelPageCount->setText("/"+QString::number(count));
-    ui->lineEditCurrentPage->setWords(1, count);    // 设置顺序序号
+    // 更新总页码数
+    ui->labelPageCount->setText("/"+QString::number(pageCount()));
+    ui->lineEditCurrentPage->setWords(1, pageCount());    // 设置顺序序号
     ui->lineEditCurrentPage->setText("1");
 }
 
