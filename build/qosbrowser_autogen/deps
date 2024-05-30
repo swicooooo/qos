@@ -358,39 +358,38 @@ qosbrowser_autogen/timestamp: \
 	E:/qos/src/model/bucketmodel.h \
 	E:/qos/src/plugins/qosplugin.cpp \
 	E:/qos/src/plugins/qosplugin.h \
-	E:/qos/src/uicom/BaseDialog.h \
-	E:/qos/src/uicom/basedialog.cpp \
-	E:/qos/src/uicom/basedialog.h \
-	E:/qos/src/uicom/breadwidget.cpp \
-	E:/qos/src/uicom/breadwidget.h \
-	E:/qos/src/uicom/comboline.cpp \
-	E:/qos/src/uicom/comboline.h \
-	E:/qos/src/uicom/pagewidget.cpp \
-	E:/qos/src/uicom/pagewidget.h \
-	E:/qos/src/uicom/qosdialog.cpp \
-	E:/qos/src/uicom/qosdialog.h \
-	E:/qos/src/uidelegate/bucketdeleagte.cpp \
-	E:/qos/src/uidelegate/bucketdeleagte.h \
-	E:/qos/src/uilogin/logindialog.cpp \
-	E:/qos/src/uilogin/logindialog.h \
-	E:/qos/src/uimain/bucketstablewidget.cpp \
-	E:/qos/src/uimain/bucketstablewidget.h \
-	E:/qos/src/uimain/bucketswidget.cpp \
-	E:/qos/src/uimain/bucketswidget.h \
-	E:/qos/src/uimain/mainwidget.cpp \
-	E:/qos/src/uimain/mainwidget.h \
-	E:/qos/src/uimain/objectstablewidget.cpp \
-	E:/qos/src/uimain/objectstablewidget.h \
+	E:/qos/src/uicom/uibasedialog.cpp \
+	E:/qos/src/uicom/uibasedialog.h \
+	E:/qos/src/uicom/uibreadwidget.cpp \
+	E:/qos/src/uicom/uibreadwidget.h \
+	E:/qos/src/uicom/uicomboline.cpp \
+	E:/qos/src/uicom/uicomboline.h \
+	E:/qos/src/uicom/uipagewidget.cpp \
+	E:/qos/src/uicom/uipagewidget.h \
+	E:/qos/src/uicom/uiqosdialog.cpp \
+	E:/qos/src/uicom/uiqosdialog.h \
+	E:/qos/src/uidelegate/uibucketdeleagte.cpp \
+	E:/qos/src/uidelegate/uibucketdeleagte.h \
+	E:/qos/src/uilogin/uilogindialog.cpp \
+	E:/qos/src/uilogin/uilogindialog.h \
 	E:/qos/src/uimain/toolbarwidget.cpp \
 	E:/qos/src/uimain/toolbarwidget.h \
-	E:/qos/src/uicom/basedialog.ui \
-	E:/qos/src/uicom/breadwidget.ui \
-	E:/qos/src/uicom/pagewidget.ui \
-	E:/qos/src/uicom/qosdialog.ui \
-	E:/qos/src/uilogin/logindialog.ui \
-	E:/qos/src/uimain/bucketstablewidget.ui \
-	E:/qos/src/uimain/bucketswidget.ui \
-	E:/qos/src/uimain/mainwidget.ui \
-	E:/qos/src/uimain/objectstablewidget.ui \
+	E:/qos/src/uimain/uibucketstablewidget.cpp \
+	E:/qos/src/uimain/uibucketstablewidget.h \
+	E:/qos/src/uimain/uibucketswidget.cpp \
+	E:/qos/src/uimain/uibucketswidget.h \
+	E:/qos/src/uimain/uimainwidget.cpp \
+	E:/qos/src/uimain/uimainwidget.h \
+	E:/qos/src/uimain/uiobjectstablewidget.cpp \
+	E:/qos/src/uimain/uiobjectstablewidget.h \
+	E:/qos/src/uicom/uibasedialog.ui \
+	E:/qos/src/uicom/uibreadwidget.ui \
+	E:/qos/src/uicom/uipagewidget.ui \
+	E:/qos/src/uicom/uiqosdialog.ui \
+	E:/qos/src/uilogin/uilogindialog.ui \
 	E:/qos/src/uimain/toolbarwidget.ui \
+	E:/qos/src/uimain/uibucketstablewidget.ui \
+	E:/qos/src/uimain/uibucketswidget.ui \
+	E:/qos/src/uimain/uimainwidget.ui \
+	E:/qos/src/uimain/uiobjectstablewidget.ui \
 	D:/qt/Tools/CMake_64/bin/cmake.exe

@@ -124,75 +124,75 @@
 			null
 		],
 		[
-			"E:/qos/src/uicom/basedialog.h",
+			"E:/qos/src/uicom/uibasedialog.h",
 			"MU",
-			"AV6Y4X6HJP/moc_basedialog.cpp",
+			"AV6Y4X6HJP/moc_uibasedialog.cpp",
 			null
 		],
 		[
-			"E:/qos/src/uicom/breadwidget.h",
+			"E:/qos/src/uicom/uibreadwidget.h",
 			"MU",
-			"AV6Y4X6HJP/moc_breadwidget.cpp",
+			"AV6Y4X6HJP/moc_uibreadwidget.cpp",
 			null
 		],
 		[
-			"E:/qos/src/uicom/comboline.h",
+			"E:/qos/src/uicom/uicomboline.h",
 			"MU",
-			"AV6Y4X6HJP/moc_comboline.cpp",
+			"AV6Y4X6HJP/moc_uicomboline.cpp",
 			null
 		],
 		[
-			"E:/qos/src/uicom/pagewidget.h",
+			"E:/qos/src/uicom/uipagewidget.h",
 			"MU",
-			"AV6Y4X6HJP/moc_pagewidget.cpp",
+			"AV6Y4X6HJP/moc_uipagewidget.cpp",
 			null
 		],
 		[
-			"E:/qos/src/uicom/qosdialog.h",
+			"E:/qos/src/uicom/uiqosdialog.h",
 			"MU",
-			"AV6Y4X6HJP/moc_qosdialog.cpp",
+			"AV6Y4X6HJP/moc_uiqosdialog.cpp",
 			null
 		],
 		[
-			"E:/qos/src/uidelegate/bucketdeleagte.h",
+			"E:/qos/src/uidelegate/uibucketdeleagte.h",
 			"MU",
-			"HHILEAQ7VD/moc_bucketdeleagte.cpp",
+			"HHILEAQ7VD/moc_uibucketdeleagte.cpp",
 			null
 		],
 		[
-			"E:/qos/src/uilogin/logindialog.h",
+			"E:/qos/src/uilogin/uilogindialog.h",
 			"MU",
-			"4RPRYGBBPX/moc_logindialog.cpp",
-			null
-		],
-		[
-			"E:/qos/src/uimain/bucketstablewidget.h",
-			"MU",
-			"IEAESOY2PW/moc_bucketstablewidget.cpp",
-			null
-		],
-		[
-			"E:/qos/src/uimain/bucketswidget.h",
-			"MU",
-			"IEAESOY2PW/moc_bucketswidget.cpp",
-			null
-		],
-		[
-			"E:/qos/src/uimain/mainwidget.h",
-			"MU",
-			"IEAESOY2PW/moc_mainwidget.cpp",
-			null
-		],
-		[
-			"E:/qos/src/uimain/objectstablewidget.h",
-			"MU",
-			"IEAESOY2PW/moc_objectstablewidget.cpp",
+			"4RPRYGBBPX/moc_uilogindialog.cpp",
 			null
 		],
 		[
 			"E:/qos/src/uimain/toolbarwidget.h",
 			"MU",
 			"IEAESOY2PW/moc_toolbarwidget.cpp",
+			null
+		],
+		[
+			"E:/qos/src/uimain/uibucketstablewidget.h",
+			"MU",
+			"IEAESOY2PW/moc_uibucketstablewidget.cpp",
+			null
+		],
+		[
+			"E:/qos/src/uimain/uibucketswidget.h",
+			"MU",
+			"IEAESOY2PW/moc_uibucketswidget.cpp",
+			null
+		],
+		[
+			"E:/qos/src/uimain/uimainwidget.h",
+			"MU",
+			"IEAESOY2PW/moc_uimainwidget.cpp",
+			null
+		],
+		[
+			"E:/qos/src/uimain/uiobjectstablewidget.h",
+			"MU",
+			"IEAESOY2PW/moc_uiobjectstablewidget.cpp",
 			null
 		]
 	],
@@ -217,6 +217,7 @@
 		"E:/qos/src/dao",
 		"E:/qos/src/model",
 		"E:/qos/src/plugins",
+		"E:/qos/third",
 		"D:/qt/5.15.2/mingw81_64/include",
 		"D:/qt/5.15.2/mingw81_64/include/QtWidgets",
 		"D:/qt/5.15.2/mingw81_64/include/QtGui",
@@ -260,18 +261,18 @@
 		[ "E:/qos/src/helper/gateway.cpp", "MU", null ],
 		[ "E:/qos/src/model/bucketmodel.cpp", "MU", null ],
 		[ "E:/qos/src/plugins/qosplugin.cpp", "MU", null ],
-		[ "E:/qos/src/uicom/basedialog.cpp", "MU", null ],
-		[ "E:/qos/src/uicom/breadwidget.cpp", "MU", null ],
-		[ "E:/qos/src/uicom/comboline.cpp", "MU", null ],
-		[ "E:/qos/src/uicom/pagewidget.cpp", "MU", null ],
-		[ "E:/qos/src/uicom/qosdialog.cpp", "MU", null ],
-		[ "E:/qos/src/uidelegate/bucketdeleagte.cpp", "MU", null ],
-		[ "E:/qos/src/uilogin/logindialog.cpp", "MU", null ],
-		[ "E:/qos/src/uimain/bucketstablewidget.cpp", "MU", null ],
-		[ "E:/qos/src/uimain/bucketswidget.cpp", "MU", null ],
-		[ "E:/qos/src/uimain/mainwidget.cpp", "MU", null ],
-		[ "E:/qos/src/uimain/objectstablewidget.cpp", "MU", null ],
-		[ "E:/qos/src/uimain/toolbarwidget.cpp", "MU", null ]
+		[ "E:/qos/src/uicom/uibasedialog.cpp", "MU", null ],
+		[ "E:/qos/src/uicom/uibreadwidget.cpp", "MU", null ],
+		[ "E:/qos/src/uicom/uicomboline.cpp", "MU", null ],
+		[ "E:/qos/src/uicom/uipagewidget.cpp", "MU", null ],
+		[ "E:/qos/src/uicom/uiqosdialog.cpp", "MU", null ],
+		[ "E:/qos/src/uidelegate/uibucketdeleagte.cpp", "MU", null ],
+		[ "E:/qos/src/uilogin/uilogindialog.cpp", "MU", null ],
+		[ "E:/qos/src/uimain/toolbarwidget.cpp", "MU", null ],
+		[ "E:/qos/src/uimain/uibucketstablewidget.cpp", "MU", null ],
+		[ "E:/qos/src/uimain/uibucketswidget.cpp", "MU", null ],
+		[ "E:/qos/src/uimain/uimainwidget.cpp", "MU", null ],
+		[ "E:/qos/src/uimain/uiobjectstablewidget.cpp", "MU", null ]
 	],
 	"UIC_OPTIONS" : [],
 	"UIC_SEARCH_PATHS" : [],

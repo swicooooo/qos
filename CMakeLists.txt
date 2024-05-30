@@ -38,25 +38,25 @@ else()
             logo.rc
             logo.ico
             res.qrc
-            src/uilogin/logindialog.cpp src/uilogin/logindialog.h src/uilogin/logindialog.ui
-            src/uimain/mainwidget.h src/uimain/mainwidget.cpp src/uimain/mainwidget.ui
-            src/uimain/bucketswidget.h src/uimain/bucketswidget.cpp src/uimain/bucketswidget.ui
-            src/uimain/objectstablewidget.h src/uimain/objectstablewidget.cpp src/uimain/objectstablewidget.ui
+            src/uilogin/uilogindialog.cpp src/uilogin/uilogindialog.h src/uilogin/uilogindialog.ui
+            src/uimain/uimainwidget.h src/uimain/uimainwidget.cpp src/uimain/uimainwidget.ui
+            src/uimain/uibucketswidget.h src/uimain/uibucketswidget.cpp src/uimain/uibucketswidget.ui
+            src/uimain/uiobjectstablewidget.h src/uimain/uiobjectstablewidget.cpp src/uimain/uiobjectstablewidget.ui
             src/uimain/toolbarwidget.h src/uimain/toolbarwidget.cpp src/uimain/toolbarwidget.ui
-            src/uicom/breadwidget.h src/uicom/breadwidget.cpp src/uicom/breadwidget.ui
-            src/uicom/pagewidget.h src/uicom/pagewidget.cpp src/uicom/pagewidget.ui
-            src/uidelegate/bucketdeleagte.h src/uidelegate/bucketdeleagte.cpp
+            src/uicom/uibreadwidget.h src/uicom/uibreadwidget.cpp src/uicom/uibreadwidget.ui
+            src/uicom/uipagewidget.h src/uicom/uipagewidget.cpp src/uicom/uipagewidget.ui
+            src/uidelegate/uibucketdeleagte.h src/uidelegate/uibucketdeleagte.cpp
             src/helper/commonformat.h src/helper/FileHelper.h src/helper/gateway.cpp src/helper/gateway.h src/helper/Singleton.h
 
             src/model/bucket.h src/model/bucketmodel.cpp src/model/bucketmodel.h
             src/dao/DaoClouds.h
             src/dao/daocloudmock.h src/dao/daocloudmock.cpp
             src/plugins/qosplugin.h src/plugins/qosplugin.cpp
-            src/uicom/basedialog.h src/uicom/basedialog.cpp src/uicom/basedialog.ui
+            src/uicom/uibasedialog.h src/uicom/uibasedialog.cpp src/uicom/uibasedialog.ui
             src/helper/Public.h
-            src/uicom/qosdialog.h src/uicom/qosdialog.cpp src/uicom/qosdialog.ui
-            src/uicom/comboline.h src/uicom/comboline.cpp
-            src/uimain/bucketstablewidget.h src/uimain/bucketstablewidget.cpp src/uimain/bucketstablewidget.ui
+            src/uicom/uiqosdialog.h src/uicom/uiqosdialog.cpp src/uicom/uiqosdialog.ui
+            src/uicom/uicomboline.h src/uicom/uicomboline.cpp
+            src/uimain/uibucketstablewidget.h src/uimain/uibucketstablewidget.cpp src/uimain/uibucketstablewidget.ui
         )
     endif()
 endif()

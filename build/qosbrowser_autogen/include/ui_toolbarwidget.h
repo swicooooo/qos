@@ -36,7 +36,7 @@ public:
     {
         if (ToolBarWidget->objectName().isEmpty())
             ToolBarWidget->setObjectName(QString::fromUtf8("ToolBarWidget"));
-        ToolBarWidget->resize(597, 52);
+        ToolBarWidget->resize(597, 58);
         gridLayout = new QGridLayout(ToolBarWidget);
         gridLayout->setObjectName(QString::fromUtf8("gridLayout"));
         horizontalLayout = new QHBoxLayout();

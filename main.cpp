@@ -1,10 +1,10 @@
-#include "logindialog.h"
-#include "src/uimain/mainwidget.h"
+#include "uilogindialog.h"
+#include "src/uimain/uimainwidget.h"
 
-#include <BreadWidget.h>
+#include <UiBreadWidget.h>
 #include <BucketModel.h>
 #include <FileHelper.h>
-#include <PageWidget.h>
+#include <UiPageWidget.h>
 #include <QApplication>
 
 
@@ -15,10 +15,10 @@ int main(int argc, char *argv[])
     QString qssStr = FileHelper::readFileAll(":/static/default.qss");
     a.setStyleSheet(qssStr);
 
-    LoginDialog w;
+    UiLoginDialog w;
     int flag = w.exec();
     BucketModel::instance()->setMockBuckets();
-    MainWidget m;
+    UiMainWidget m;
     if(flag == QDialog::Accepted)
     {
         m.show();

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWidget</class>
+ <widget class="QWidget" name="MainWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>860</width>
+    <height>573</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <property name="leftMargin">
+    <number>11</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>11</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <property name="horizontalSpacing">
+    <number>0</number>
+   </property>
+   <item row="0" column="0">
+    <widget class="QSplitter" name="splitter">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <widget class="UiBucketsWidget" name="widgetBucket" native="true"/>
+     <widget class="QWidget" name="layoutWidget">
+      <layout class="QVBoxLayout" name="verticalLayout" stretch="0">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QStackedWidget" name="stackedWidget">
+         <widget class="UiBucketsTableWidget" name="pageBucket"/>
+         <widget class="UiObjectsTableWidget" name="pageObject"/>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>UiBucketsWidget</class>
+   <extends>QWidget</extends>
+   <header>uibucketswidget.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>UiObjectsTableWidget</class>
+   <extends>QWidget</extends>
+   <header location="global">uiobjectstablewidget.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>UiBucketsTableWidget</class>
+   <extends>QWidget</extends>
+   <header location="global">uibucketstablewidget.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
