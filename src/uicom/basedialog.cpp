@@ -62,8 +62,7 @@ QPushButton* BaseDialog::addButton(const QString &path, const QString &hoverPath
     btn->setFixedSize(recordSize_, recordSize_);
     setButtonImage(btn, path, hoverPath);
     // 添加到closebtn前
-    int idx = base_ui->horizontalLayout->indexOf(base_ui->pushButtonClose);
-    base_ui->horizontalLayout->insertWidget(idx, btn);
+    addWidget(btn);
     return btn;
 }
 
@@ -83,6 +82,14 @@ void BaseDialog::setAllButtonSize(int w)
         btn->setFixedSize(w, w);
     }
     recordSize_ = w;
+}
+
+void BaseDialog::addTitleLine(int w)
+{
+    QLabel *label = new QLabel;
+    label->setFixedSize(w,15);
+    label->setStyleSheet("QLabel{background-color: lightgray;}");
+    addWidget(label);
 }
 
 void BaseDialog::mousePressEvent(QMouseEvent *event)
@@ -116,4 +123,10 @@ void BaseDialog::addCloseButton(const QString &path, const QString &hoverPath)
     setButtonImage(base_ui->pushButtonClose, path, hoverPath);
     base_ui->horizontalLayout->addWidget(base_ui->pushButtonClose);
     connect(base_ui->pushButtonClose, &QPushButton::clicked, this, &BaseDialog::reject);
+}
+
+void BaseDialog::addWidget(QWidget *w)
+{
+    int idx = base_ui->horizontalLayout->indexOf(base_ui->pushButtonClose);
+    base_ui->horizontalLayout->insertWidget(idx, w);
 }

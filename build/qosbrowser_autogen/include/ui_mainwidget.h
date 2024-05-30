@@ -13,13 +13,12 @@
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QGridLayout>
 #include <QtWidgets/QSplitter>
+#include <QtWidgets/QStackedWidget>
 #include <QtWidgets/QVBoxLayout>
 #include <QtWidgets/QWidget>
-#include "breadwidget.h"
+#include <objectstablewidget.h>
+#include "bucketstablewidget.h"
 #include "bucketswidget.h"
-#include "objectswidget.h"
-#include "pagewidget.h"
-#include "toolbarwidget.h"
 
 QT_BEGIN_NAMESPACE
 
@@ -31,10 +30,9 @@ public:
     BucketsWidget *widgetBucket;
     QWidget *layoutWidget;
     QVBoxLayout *verticalLayout;
-    ToolBarWidget *widgetToolBar;
-    BreadWidget *widgetBread;
-    ObjectsWidget *widgetObject;
-    PageWidget *widgetPage;
+    QStackedWidget *stackedWidget;
+    BucketsTableWidget *pageBucket;
+    ObjectsTableWidget *pageObject;
 
     void setupUi(QWidget *MainWidget)
     {
@@ -57,27 +55,17 @@ public:
         verticalLayout->setSpacing(0);
         verticalLayout->setObjectName(QString::fromUtf8("verticalLayout"));
         verticalLayout->setContentsMargins(0, 0, 0, 0);
-        widgetToolBar = new ToolBarWidget(layoutWidget);
-        widgetToolBar->setObjectName(QString::fromUtf8("widgetToolBar"));
+        stackedWidget = new QStackedWidget(layoutWidget);
+        stackedWidget->setObjectName(QString::fromUtf8("stackedWidget"));
+        pageBucket = new BucketsTableWidget();
+        pageBucket->setObjectName(QString::fromUtf8("pageBucket"));
+        stackedWidget->addWidget(pageBucket);
+        pageObject = new ObjectsTableWidget();
+        pageObject->setObjectName(QString::fromUtf8("pageObject"));
+        stackedWidget->addWidget(pageObject);
 
-        verticalLayout->addWidget(widgetToolBar);
+        verticalLayout->addWidget(stackedWidget);
 
-        widgetBread = new BreadWidget(layoutWidget);
-        widgetBread->setObjectName(QString::fromUtf8("widgetBread"));
-
-        verticalLayout->addWidget(widgetBread);
-
-        widgetObject = new ObjectsWidget(layoutWidget);
-        widgetObject->setObjectName(QString::fromUtf8("widgetObject"));
-
-        verticalLayout->addWidget(widgetObject);
-
-        widgetPage = new PageWidget(layoutWidget);
-        widgetPage->setObjectName(QString::fromUtf8("widgetPage"));
-
-        verticalLayout->addWidget(widgetPage);
-
-        verticalLayout->setStretch(2, 1);
         splitter->addWidget(layoutWidget);
 
         gridLayout->addWidget(splitter, 0, 0, 1, 1);

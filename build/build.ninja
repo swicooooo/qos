@@ -96,9 +96,9 @@ build CMakeFiles/qosbrowser.dir/src/uimain/bucketswidget.cpp.obj: CXX_COMPILER__
   OBJECT_DIR = CMakeFiles\qosbrowser.dir
   OBJECT_FILE_DIR = CMakeFiles\qosbrowser.dir\src\uimain
 
-build CMakeFiles/qosbrowser.dir/src/uimain/objectswidget.cpp.obj: CXX_COMPILER__qosbrowser_unscanned_Debug E$:/qos/src/uimain/objectswidget.cpp || cmake_object_order_depends_target_qosbrowser
+build CMakeFiles/qosbrowser.dir/src/uimain/objectstablewidget.cpp.obj: CXX_COMPILER__qosbrowser_unscanned_Debug E$:/qos/src/uimain/objectstablewidget.cpp || cmake_object_order_depends_target_qosbrowser
   DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB
-  DEP_FILE = CMakeFiles\qosbrowser.dir\src\uimain\objectswidget.cpp.obj.d
+  DEP_FILE = CMakeFiles\qosbrowser.dir\src\uimain\objectstablewidget.cpp.obj.d
   FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
   INCLUDES = -IE:/qos/build/qosbrowser_autogen/include -IE:/qos/src/uimain -IE:/qos/src/uicom -IE:/qos/src/uilogin -IE:/qos/src/uidelegate -IE:/qos/src/helper -IE:/qos/src/dao -IE:/qos/src/model -IE:/qos/src/plugins -isystem D:/qt/5.15.2/mingw81_64/include -isystem D:/qt/5.15.2/mingw81_64/include/QtWidgets -isystem D:/qt/5.15.2/mingw81_64/include/QtGui -isystem D:/qt/5.15.2/mingw81_64/include/QtANGLE -isystem D:/qt/5.15.2/mingw81_64/include/QtCore -isystem D:/qt/5.15.2/mingw81_64/./mkspecs/win32-g++
   OBJECT_DIR = CMakeFiles\qosbrowser.dir
@@ -192,6 +192,14 @@ build CMakeFiles/qosbrowser.dir/src/uicom/comboline.cpp.obj: CXX_COMPILER__qosbr
   OBJECT_DIR = CMakeFiles\qosbrowser.dir
   OBJECT_FILE_DIR = CMakeFiles\qosbrowser.dir\src\uicom
 
+build CMakeFiles/qosbrowser.dir/src/uimain/bucketstablewidget.cpp.obj: CXX_COMPILER__qosbrowser_unscanned_Debug E$:/qos/src/uimain/bucketstablewidget.cpp || cmake_object_order_depends_target_qosbrowser
+  DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB
+  DEP_FILE = CMakeFiles\qosbrowser.dir\src\uimain\bucketstablewidget.cpp.obj.d
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
+  INCLUDES = -IE:/qos/build/qosbrowser_autogen/include -IE:/qos/src/uimain -IE:/qos/src/uicom -IE:/qos/src/uilogin -IE:/qos/src/uidelegate -IE:/qos/src/helper -IE:/qos/src/dao -IE:/qos/src/model -IE:/qos/src/plugins -isystem D:/qt/5.15.2/mingw81_64/include -isystem D:/qt/5.15.2/mingw81_64/include/QtWidgets -isystem D:/qt/5.15.2/mingw81_64/include/QtGui -isystem D:/qt/5.15.2/mingw81_64/include/QtANGLE -isystem D:/qt/5.15.2/mingw81_64/include/QtCore -isystem D:/qt/5.15.2/mingw81_64/./mkspecs/win32-g++
+  OBJECT_DIR = CMakeFiles\qosbrowser.dir
+  OBJECT_FILE_DIR = CMakeFiles\qosbrowser.dir\src\uimain
+
 build CMakeFiles/qosbrowser.dir/qosbrowser_autogen/EWIEGA46WW/qrc_res.cpp.obj: CXX_COMPILER__qosbrowser_unscanned_Debug E$:/qos/build/qosbrowser_autogen/EWIEGA46WW/qrc_res.cpp || cmake_object_order_depends_target_qosbrowser
   DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB
   DEP_FILE = CMakeFiles\qosbrowser.dir\qosbrowser_autogen\EWIEGA46WW\qrc_res.cpp.obj.d
@@ -208,7 +216,7 @@ build CMakeFiles/qosbrowser.dir/qosbrowser_autogen/EWIEGA46WW/qrc_res.cpp.obj: C
 #############################################
 # Link the executable qosbrowser.exe
 
-build qosbrowser.exe: CXX_EXECUTABLE_LINKER__qosbrowser_Debug CMakeFiles/qosbrowser.dir/qosbrowser_autogen/mocs_compilation.cpp.obj CMakeFiles/qosbrowser.dir/main.cpp.obj CMakeFiles/qosbrowser.dir/logo.rc.obj CMakeFiles/qosbrowser.dir/src/uilogin/logindialog.cpp.obj CMakeFiles/qosbrowser.dir/src/uimain/mainwidget.cpp.obj CMakeFiles/qosbrowser.dir/src/uimain/bucketswidget.cpp.obj CMakeFiles/qosbrowser.dir/src/uimain/objectswidget.cpp.obj CMakeFiles/qosbrowser.dir/src/uimain/toolbarwidget.cpp.obj CMakeFiles/qosbrowser.dir/src/uicom/breadwidget.cpp.obj CMakeFiles/qosbrowser.dir/src/uicom/pagewidget.cpp.obj CMakeFiles/qosbrowser.dir/src/uidelegate/bucketdeleagte.cpp.obj CMakeFiles/qosbrowser.dir/src/helper/gateway.cpp.obj CMakeFiles/qosbrowser.dir/src/model/bucketmodel.cpp.obj CMakeFiles/qosbrowser.dir/src/dao/daocloudmock.cpp.obj CMakeFiles/qosbrowser.dir/src/plugins/qosplugin.cpp.obj CMakeFiles/qosbrowser.dir/src/uicom/basedialog.cpp.obj CMakeFiles/qosbrowser.dir/src/uicom/qosdialog.cpp.obj CMakeFiles/qosbrowser.dir/src/uicom/comboline.cpp.obj CMakeFiles/qosbrowser.dir/qosbrowser_autogen/EWIEGA46WW/qrc_res.cpp.obj | D$:/qt/5.15.2/mingw81_64/lib/libQt5Widgets.a D$:/qt/5.15.2/mingw81_64/lib/libQt5Gui.a D$:/qt/5.15.2/mingw81_64/lib/libQt5Core.a D$:/qt/5.15.2/mingw81_64/lib/libqtmain.a || qosbrowser_autogen qosbrowser_autogen_timestamp_deps
+build qosbrowser.exe: CXX_EXECUTABLE_LINKER__qosbrowser_Debug CMakeFiles/qosbrowser.dir/qosbrowser_autogen/mocs_compilation.cpp.obj CMakeFiles/qosbrowser.dir/main.cpp.obj CMakeFiles/qosbrowser.dir/logo.rc.obj CMakeFiles/qosbrowser.dir/src/uilogin/logindialog.cpp.obj CMakeFiles/qosbrowser.dir/src/uimain/mainwidget.cpp.obj CMakeFiles/qosbrowser.dir/src/uimain/bucketswidget.cpp.obj CMakeFiles/qosbrowser.dir/src/uimain/objectstablewidget.cpp.obj CMakeFiles/qosbrowser.dir/src/uimain/toolbarwidget.cpp.obj CMakeFiles/qosbrowser.dir/src/uicom/breadwidget.cpp.obj CMakeFiles/qosbrowser.dir/src/uicom/pagewidget.cpp.obj CMakeFiles/qosbrowser.dir/src/uidelegate/bucketdeleagte.cpp.obj CMakeFiles/qosbrowser.dir/src/helper/gateway.cpp.obj CMakeFiles/qosbrowser.dir/src/model/bucketmodel.cpp.obj CMakeFiles/qosbrowser.dir/src/dao/daocloudmock.cpp.obj CMakeFiles/qosbrowser.dir/src/plugins/qosplugin.cpp.obj CMakeFiles/qosbrowser.dir/src/uicom/basedialog.cpp.obj CMakeFiles/qosbrowser.dir/src/uicom/qosdialog.cpp.obj CMakeFiles/qosbrowser.dir/src/uicom/comboline.cpp.obj CMakeFiles/qosbrowser.dir/src/uimain/bucketstablewidget.cpp.obj CMakeFiles/qosbrowser.dir/qosbrowser_autogen/EWIEGA46WW/qrc_res.cpp.obj | D$:/qt/5.15.2/mingw81_64/lib/libQt5Widgets.a D$:/qt/5.15.2/mingw81_64/lib/libQt5Gui.a D$:/qt/5.15.2/mingw81_64/lib/libQt5Core.a D$:/qt/5.15.2/mingw81_64/lib/libqtmain.a || qosbrowser_autogen qosbrowser_autogen_timestamp_deps
   FLAGS = -g
   LINK_FLAGS = -mwindows
   LINK_LIBRARIES = D:/qt/5.15.2/mingw81_64/lib/libQt5Widgets.a  D:/qt/5.15.2/mingw81_64/lib/libQt5Gui.a  D:/qt/5.15.2/mingw81_64/lib/libQt5Core.a  D:/qt/5.15.2/mingw81_64/lib/libqtmain.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
@@ -295,7 +303,7 @@ build qosbrowser_autogen_timestamp_deps: phony CMakeFiles/qosbrowser_autogen_tim
 #############################################
 # Utility command for qosbrowser_autogen
 
-build qosbrowser_autogen: phony CMakeFiles/qosbrowser_autogen qosbrowser_autogen/include/src/uilogin/ui_logindialog.h qosbrowser_autogen/include/src/uimain/ui_mainwidget.h qosbrowser_autogen/include/src/uimain/ui_bucketswidget.h qosbrowser_autogen/include/src/uimain/ui_objectswidget.h qosbrowser_autogen/include/src/uimain/ui_toolbarwidget.h qosbrowser_autogen/include/src/uicom/ui_breadwidget.h qosbrowser_autogen/include/src/uicom/ui_pagewidget.h qosbrowser_autogen/include/src/uicom/ui_basedialog.h qosbrowser_autogen/include/src/uicom/ui_qosdialog.h qosbrowser_autogen/timestamp qosbrowser_autogen/mocs_compilation.cpp qosbrowser_autogen_timestamp_deps
+build qosbrowser_autogen: phony CMakeFiles/qosbrowser_autogen qosbrowser_autogen/include/src/uilogin/ui_logindialog.h qosbrowser_autogen/include/src/uimain/ui_mainwidget.h qosbrowser_autogen/include/src/uimain/ui_bucketswidget.h qosbrowser_autogen/include/src/uimain/ui_objectstablewidget.h qosbrowser_autogen/include/src/uimain/ui_toolbarwidget.h qosbrowser_autogen/include/src/uicom/ui_breadwidget.h qosbrowser_autogen/include/src/uicom/ui_pagewidget.h qosbrowser_autogen/include/src/uicom/ui_basedialog.h qosbrowser_autogen/include/src/uicom/ui_qosdialog.h qosbrowser_autogen/include/src/uimain/ui_bucketstablewidget.h qosbrowser_autogen/timestamp qosbrowser_autogen/mocs_compilation.cpp qosbrowser_autogen_timestamp_deps
 
 
 #############################################
@@ -311,7 +319,7 @@ build qosbrowser_autogen/timestamp qosbrowser_autogen/mocs_compilation.cpp | ${c
 #############################################
 # Custom command for qosbrowser_autogen\EWIEGA46WW\qrc_res.cpp
 
-build qosbrowser_autogen/EWIEGA46WW/qrc_res.cpp | ${cmake_ninja_workdir}qosbrowser_autogen/EWIEGA46WW/qrc_res.cpp: CUSTOM_COMMAND E$:/qos/res.qrc CMakeFiles/qosbrowser_autogen.dir/AutoRcc_res_EWIEGA46WW_Info.json E$:/qos/static/default.qss E$:/qos/static/logo.png E$:/qos/static/bucketsTest.json E$:/qos/static/breadIcon.svg D$:/qt/5.15.2/mingw81_64/bin/rcc.exe || qosbrowser_autogen qosbrowser_autogen_timestamp_deps
+build qosbrowser_autogen/EWIEGA46WW/qrc_res.cpp | ${cmake_ninja_workdir}qosbrowser_autogen/EWIEGA46WW/qrc_res.cpp: CUSTOM_COMMAND E$:/qos/res.qrc CMakeFiles/qosbrowser_autogen.dir/AutoRcc_res_EWIEGA46WW_Info.json E$:/qos/static/quit.svg E$:/qos/static/tran.svg E$:/qos/static/default.qss E$:/qos/static/logo.png E$:/qos/static/bucketsTest.json E$:/qos/static/breadIcon.svg D$:/qt/5.15.2/mingw81_64/bin/rcc.exe || qosbrowser_autogen qosbrowser_autogen_timestamp_deps
   COMMAND = cmd.exe /C "cd /D E:\qos\build && D:\qt\Tools\CMake_64\bin\cmake.exe -E cmake_autorcc E:/qos/build/CMakeFiles/qosbrowser_autogen.dir/AutoRcc_res_EWIEGA46WW_Info.json Debug"
   DESC = Automatic RCC for res.qrc
   restat = 1
@@ -320,13 +328,13 @@ build qosbrowser_autogen/EWIEGA46WW/qrc_res.cpp | ${cmake_ninja_workdir}qosbrows
 #############################################
 # Phony custom command for CMakeFiles\qosbrowser_autogen_timestamp_deps
 
-build CMakeFiles/qosbrowser_autogen_timestamp_deps | ${cmake_ninja_workdir}CMakeFiles/qosbrowser_autogen_timestamp_deps: phony D$:/qt/5.15.2/mingw81_64/bin/uic.exe D$:/qt/5.15.2/mingw81_64/bin/moc.exe D$:/qt/5.15.2/mingw81_64/lib/libQt5Widgets.a
+build CMakeFiles/qosbrowser_autogen_timestamp_deps | ${cmake_ninja_workdir}CMakeFiles/qosbrowser_autogen_timestamp_deps: phony D$:/qt/5.15.2/mingw81_64/bin/moc.exe D$:/qt/5.15.2/mingw81_64/bin/uic.exe D$:/qt/5.15.2/mingw81_64/lib/libQt5Widgets.a
 
 
 #############################################
 # Phony custom command for CMakeFiles\qosbrowser_autogen
 
-build CMakeFiles/qosbrowser_autogen qosbrowser_autogen/include/src/uilogin/ui_logindialog.h qosbrowser_autogen/include/src/uimain/ui_mainwidget.h qosbrowser_autogen/include/src/uimain/ui_bucketswidget.h qosbrowser_autogen/include/src/uimain/ui_objectswidget.h qosbrowser_autogen/include/src/uimain/ui_toolbarwidget.h qosbrowser_autogen/include/src/uicom/ui_breadwidget.h qosbrowser_autogen/include/src/uicom/ui_pagewidget.h qosbrowser_autogen/include/src/uicom/ui_basedialog.h qosbrowser_autogen/include/src/uicom/ui_qosdialog.h | ${cmake_ninja_workdir}CMakeFiles/qosbrowser_autogen ${cmake_ninja_workdir}qosbrowser_autogen/include/src/uilogin/ui_logindialog.h ${cmake_ninja_workdir}qosbrowser_autogen/include/src/uimain/ui_mainwidget.h ${cmake_ninja_workdir}qosbrowser_autogen/include/src/uimain/ui_bucketswidget.h ${cmake_ninja_workdir}qosbrowser_autogen/include/src/uimain/ui_objectswidget.h ${cmake_ninja_workdir}qosbrowser_autogen/include/src/uimain/ui_toolbarwidget.h ${cmake_ninja_workdir}qosbrowser_autogen/include/src/uicom/ui_breadwidget.h ${cmake_ninja_workdir}qosbrowser_autogen/include/src/uicom/ui_pagewidget.h ${cmake_ninja_workdir}qosbrowser_autogen/include/src/uicom/ui_basedialog.h ${cmake_ninja_workdir}qosbrowser_autogen/include/src/uicom/ui_qosdialog.h: phony qosbrowser_autogen/timestamp || qosbrowser_autogen_timestamp_deps
+build CMakeFiles/qosbrowser_autogen qosbrowser_autogen/include/src/uilogin/ui_logindialog.h qosbrowser_autogen/include/src/uimain/ui_mainwidget.h qosbrowser_autogen/include/src/uimain/ui_bucketswidget.h qosbrowser_autogen/include/src/uimain/ui_objectstablewidget.h qosbrowser_autogen/include/src/uimain/ui_toolbarwidget.h qosbrowser_autogen/include/src/uicom/ui_breadwidget.h qosbrowser_autogen/include/src/uicom/ui_pagewidget.h qosbrowser_autogen/include/src/uicom/ui_basedialog.h qosbrowser_autogen/include/src/uicom/ui_qosdialog.h qosbrowser_autogen/include/src/uimain/ui_bucketstablewidget.h | ${cmake_ninja_workdir}CMakeFiles/qosbrowser_autogen ${cmake_ninja_workdir}qosbrowser_autogen/include/src/uilogin/ui_logindialog.h ${cmake_ninja_workdir}qosbrowser_autogen/include/src/uimain/ui_mainwidget.h ${cmake_ninja_workdir}qosbrowser_autogen/include/src/uimain/ui_bucketswidget.h ${cmake_ninja_workdir}qosbrowser_autogen/include/src/uimain/ui_objectstablewidget.h ${cmake_ninja_workdir}qosbrowser_autogen/include/src/uimain/ui_toolbarwidget.h ${cmake_ninja_workdir}qosbrowser_autogen/include/src/uicom/ui_breadwidget.h ${cmake_ninja_workdir}qosbrowser_autogen/include/src/uicom/ui_pagewidget.h ${cmake_ninja_workdir}qosbrowser_autogen/include/src/uicom/ui_basedialog.h ${cmake_ninja_workdir}qosbrowser_autogen/include/src/uicom/ui_qosdialog.h ${cmake_ninja_workdir}qosbrowser_autogen/include/src/uimain/ui_bucketstablewidget.h: phony qosbrowser_autogen/timestamp || qosbrowser_autogen_timestamp_deps
 
 # =============================================================================
 # Target aliases.

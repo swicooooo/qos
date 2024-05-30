@@ -1,4 +1,4 @@
-E:/qos/build/qosbrowser_autogen/AV6Y4X6HJP/moc_BreadWidget.cpp: E:/qos/src/uicom/BreadWidget.h \
+E:/qos/build/qosbrowser_autogen/AV6Y4X6HJP/moc_breadwidget.cpp: E:/qos/src/uicom/breadwidget.h \
   E:/qos/build/qosbrowser_autogen/moc_predefs.h \
   D:/qt/5.15.2/mingw81_64/include/QtCore/qabstractitemmodel.h \
   D:/qt/5.15.2/mingw81_64/include/QtCore/qalgorithms.h \

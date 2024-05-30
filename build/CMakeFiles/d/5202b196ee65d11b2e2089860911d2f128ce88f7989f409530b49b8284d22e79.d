@@ -359,11 +359,12 @@ qosbrowser_autogen/timestamp: \
   E:/qos/src/model/bucketmodel.h \
   E:/qos/src/plugins/qosplugin.cpp \
   E:/qos/src/plugins/qosplugin.h \
-  E:/qos/src/uicom/BreadWidget.h \
+  E:/qos/src/uicom/BaseDialog.h \
   E:/qos/src/uicom/basedialog.cpp \
-  E:/qos/src/uicom/basedialog.h \
+  E:/qos/src/uicom/BaseDialog.h \
   E:/qos/src/uicom/basedialog.ui \
   E:/qos/src/uicom/breadwidget.cpp \
+  E:/qos/src/uicom/breadwidget.h \
   E:/qos/src/uicom/breadwidget.ui \
   E:/qos/src/uicom/comboline.cpp \
   E:/qos/src/uicom/comboline.h \
@@ -378,15 +379,18 @@ qosbrowser_autogen/timestamp: \
   E:/qos/src/uilogin/logindialog.cpp \
   E:/qos/src/uilogin/logindialog.h \
   E:/qos/src/uilogin/logindialog.ui \
+  E:/qos/src/uimain/bucketstablewidget.cpp \
+  E:/qos/src/uimain/bucketstablewidget.h \
+  E:/qos/src/uimain/bucketstablewidget.ui \
   E:/qos/src/uimain/bucketswidget.cpp \
   E:/qos/src/uimain/bucketswidget.h \
   E:/qos/src/uimain/bucketswidget.ui \
   E:/qos/src/uimain/mainwidget.cpp \
   E:/qos/src/uimain/mainwidget.h \
   E:/qos/src/uimain/mainwidget.ui \
-  E:/qos/src/uimain/objectswidget.cpp \
-  E:/qos/src/uimain/objectswidget.h \
-  E:/qos/src/uimain/objectswidget.ui \
+  E:/qos/src/uimain/objectstablewidget.cpp \
+  E:/qos/src/uimain/objectstablewidget.h \
+  E:/qos/src/uimain/objectstablewidget.ui \
   E:/qos/src/uimain/toolbarwidget.cpp \
   E:/qos/src/uimain/toolbarwidget.h \
   E:/qos/src/uimain/toolbarwidget.ui

@@ -41,7 +41,7 @@ else()
             src/uilogin/logindialog.cpp src/uilogin/logindialog.h src/uilogin/logindialog.ui
             src/uimain/mainwidget.h src/uimain/mainwidget.cpp src/uimain/mainwidget.ui
             src/uimain/bucketswidget.h src/uimain/bucketswidget.cpp src/uimain/bucketswidget.ui
-            src/uimain/objectswidget.h src/uimain/objectswidget.cpp src/uimain/objectswidget.ui
+            src/uimain/objectstablewidget.h src/uimain/objectstablewidget.cpp src/uimain/objectstablewidget.ui
             src/uimain/toolbarwidget.h src/uimain/toolbarwidget.cpp src/uimain/toolbarwidget.ui
             src/uicom/breadwidget.h src/uicom/breadwidget.cpp src/uicom/breadwidget.ui
             src/uicom/pagewidget.h src/uicom/pagewidget.cpp src/uicom/pagewidget.ui
@@ -56,6 +56,7 @@ else()
             src/helper/Public.h
             src/uicom/qosdialog.h src/uicom/qosdialog.cpp src/uicom/qosdialog.ui
             src/uicom/comboline.h src/uicom/comboline.cpp
+            src/uimain/bucketstablewidget.h src/uimain/bucketstablewidget.cpp src/uimain/bucketstablewidget.ui
         )
     endif()
 endif()
@@ -70,6 +71,8 @@ include_directories(${PROJECT_SOURCE_DIR}/src/helper)
 include_directories(${PROJECT_SOURCE_DIR}/src/dao)
 include_directories(${PROJECT_SOURCE_DIR}/src/model)
 include_directories(${PROJECT_SOURCE_DIR}/src/plugins)
+
+include_directories(${PROJECT_SOURCE_DIR}/third)
 
 # Qt for iOS sets MACOSX_BUNDLE_GUI_IDENTIFIER automatically since Qt 6.1.
 # If you are developing for iOS or macOS you should consider setting an

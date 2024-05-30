@@ -124,15 +124,15 @@
 			null
 		],
 		[
-			"E:/qos/src/uicom/BreadWidget.h",
-			"MU",
-			"AV6Y4X6HJP/moc_BreadWidget.cpp",
-			null
-		],
-		[
 			"E:/qos/src/uicom/basedialog.h",
 			"MU",
 			"AV6Y4X6HJP/moc_basedialog.cpp",
+			null
+		],
+		[
+			"E:/qos/src/uicom/breadwidget.h",
+			"MU",
+			"AV6Y4X6HJP/moc_breadwidget.cpp",
 			null
 		],
 		[
@@ -166,6 +166,12 @@
 			null
 		],
 		[
+			"E:/qos/src/uimain/bucketstablewidget.h",
+			"MU",
+			"IEAESOY2PW/moc_bucketstablewidget.cpp",
+			null
+		],
+		[
 			"E:/qos/src/uimain/bucketswidget.h",
 			"MU",
 			"IEAESOY2PW/moc_bucketswidget.cpp",
@@ -178,9 +184,9 @@
 			null
 		],
 		[
-			"E:/qos/src/uimain/objectswidget.h",
+			"E:/qos/src/uimain/objectstablewidget.h",
 			"MU",
-			"IEAESOY2PW/moc_objectswidget.cpp",
+			"IEAESOY2PW/moc_objectstablewidget.cpp",
 			null
 		],
 		[
@@ -261,9 +267,10 @@
 		[ "E:/qos/src/uicom/qosdialog.cpp", "MU", null ],
 		[ "E:/qos/src/uidelegate/bucketdeleagte.cpp", "MU", null ],
 		[ "E:/qos/src/uilogin/logindialog.cpp", "MU", null ],
+		[ "E:/qos/src/uimain/bucketstablewidget.cpp", "MU", null ],
 		[ "E:/qos/src/uimain/bucketswidget.cpp", "MU", null ],
 		[ "E:/qos/src/uimain/mainwidget.cpp", "MU", null ],
-		[ "E:/qos/src/uimain/objectswidget.cpp", "MU", null ],
+		[ "E:/qos/src/uimain/objectstablewidget.cpp", "MU", null ],
 		[ "E:/qos/src/uimain/toolbarwidget.cpp", "MU", null ]
 	],
 	"UIC_OPTIONS" : [],

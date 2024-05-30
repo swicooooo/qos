@@ -14,6 +14,11 @@ namespace path
     static const QString NORMLA_HOVER_PATH = ":/static/logo.png";
     static const QString MIN_PATH = ":/static/logo.png";
     static const QString MIN_HOVER_PATH = ":/static/logo.png";
+
+    static const QString TRAN_PATH = ":/static/tran.svg";
+    static const QString TRAN_HOVER_PATH = ":/static/tran.svg";
+    static const QString QUIT_PATH = ":/static/quit.svg";
+    static const QString QUIT_HOVER_PATH = ":/static/quit.svg";
 };
 };
 

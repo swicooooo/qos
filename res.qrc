@@ -4,5 +4,7 @@
         <file>static/bucketsTest.json</file>
         <file>static/logo.png</file>
         <file>static/breadIcon.svg</file>
+        <file>static/quit.svg</file>
+        <file>static/tran.svg</file>
     </qresource>
 </RCC>

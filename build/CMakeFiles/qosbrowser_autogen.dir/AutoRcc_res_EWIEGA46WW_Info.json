@@ -7,6 +7,8 @@
 	"INCLUDE_DIR" : "E:/qos/build/qosbrowser_autogen/include",
 	"INPUTS" : 
 	[
+		"E:/qos/static/quit.svg",
+		"E:/qos/static/tran.svg",
 		"E:/qos/static/default.qss",
 		"E:/qos/static/logo.png",
 		"E:/qos/static/bucketsTest.json",
