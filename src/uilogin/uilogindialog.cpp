@@ -1,8 +1,7 @@
 #include "uilogindialog.h"
-#include "commonformat.h"
 #include "ui_uilogindialog.h"
 
-#include <QJsonObject>
+#include <nlohmann/json.hpp>
 #include <QKeyEvent>
 #include <gateway.h>
 
@@ -42,10 +41,10 @@ bool UiLoginDialog::eventFilter(QObject *watched, QEvent *event)
 
 void UiLoginDialog::onPushButtonLoginClicked()
 {
-    QJsonObject params;
-    params["secretId"] = ui->lineEditSecretid->text().trimmed();
-    params["secretKey"] = ui->lineEditSecretkey->text().trimmed();
-    Gateway::instance()->send(api::LOGIN, params);
+    nlohmann::json params;
+    params["secretId"] = ui->lineEditSecretid->text().trimmed().toStdString();
+    params["secretKey"] = ui->lineEditSecretkey->text().trimmed().toStdString();
+    Gateway::instance()->send(global::api::LOGIN::NORMAL, params);
     Gateway::instance()->setLoginCallback(std::bind(&UiLoginDialog::onLoginCallback,this,std::placeholders::_1));
 }
 

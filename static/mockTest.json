@@ -1,0 +1,39 @@
+{
+    "buckets": [
+        {
+            "create_date": "2019-10-12T06:14:21Z",
+            "location": "ap-shanghai",
+            "name": "bucket1-1300416379"
+        },
+        {
+            "create_date": "2023-10-12T07:14:21Z",
+            "location": "ap-shanghai",
+            "name": "bucket2-1300416380"
+        }
+    ],
+
+    "users": [
+        {
+            "secretId": "0",
+            "secretKey": "0"
+        }
+    ],
+
+    "objects": [
+        {
+            "lastmodified": "2019-10-12T06:14:21Z",
+            "size": 2024,
+            "dir": "",
+            "name": "test1.txt"
+        },
+        {
+
+            "lastmodified": "2023-10-12T07:14:21Z",
+            "size": 102400,
+            "dir": "",
+            "name": "test2.txt"
+        }
+    ]
+}
+
+

@@ -2,9 +2,11 @@
 #include "ui_uibucketstablewidget.h"
 
 #include <UiBucketDeleagte.h>
-#include <BucketModel.h>
+#include <managermodel.h>
 #include <ToolBarWidget.h>
 #include <qstandarditemmodel.h>
+#include <Gateway.h>
+#include <nlohmann/json.hpp>
 
 UiBucketsTableWidget::UiBucketsTableWidget(QWidget *parent)
     : QWidget(parent)
@@ -13,17 +15,10 @@ UiBucketsTableWidget::UiBucketsTableWidget(QWidget *parent)
     ui->setupUi(this);
 
     // 指定model数据来源，指定某行的代理数据
-    ui->tableView->setModel(BucketModel::instance()->model());
+    ui->tableView->setModel(ManagerModel::instance()->modelBuckets());
     ui->tableView->setItemDelegateForColumn(1, new UiBucketDeleagte());
 
-    // // 设置标题内容
-    QStandardItemModel*  model = BucketModel::instance()->model();
-    QStringList labels;
-    labels << QString("bucket_name") << QString("location") << QString("create_time");
-    // model->setColumnCount(labels.size());
-    model->setHorizontalHeaderLabels(labels);
-
-    // // 设置行宽度
+    // 设置行宽度
     ui->tableView->setColumnWidth(0, 250);
     ui->tableView->setColumnWidth(1, 150);
     ui->tableView->horizontalHeader()->setStretchLastSection(true); // 设置最后一节占满后面的空间
@@ -37,5 +32,18 @@ UiBucketsTableWidget::UiBucketsTableWidget(QWidget *parent)
 UiBucketsTableWidget::~UiBucketsTableWidget()
 {
     delete ui;
+}
+
+
+void UiBucketsTableWidget::on_tableView_doubleClicked(const QModelIndex &index)
+{
+    if(index.column() == 0)
+    {
+        // 点击桶名称进入对象列表
+        nlohmann::json params;
+        params["name"] = index.data().toString().toStdString();
+        params["dir"] = "";
+        Gateway::instance()->send(global::api::OBJECTS::OLIST, params);
+    }
 }
 

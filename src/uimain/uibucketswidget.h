@@ -15,6 +15,9 @@ public:
     explicit UiBucketsWidget(QWidget *parent = nullptr);
     ~UiBucketsWidget();
 
+private slots:
+    void on_listView_doubleClicked(const QModelIndex &index);
+
 private:
     Ui::BucketsWidget *ui;
 };

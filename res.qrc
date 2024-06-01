@@ -1,7 +1,7 @@
 <RCC>
     <qresource prefix="/">
         <file>static/default.qss</file>
-        <file>static/bucketsTest.json</file>
+        <file>static/mockTest.json</file>
         <file>static/logo.png</file>
         <file>static/breadIcon.svg</file>
         <file>static/quit.svg</file>

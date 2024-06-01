@@ -17,6 +17,7 @@ public:
 
 private slots:
     void onButtonClick(int id);
+    void onStackChangeCallback(int flag);
 
 private:
     Ui::MainWidget *ui;

@@ -20,6 +20,35 @@ namespace path
     static const QString QUIT_PATH = ":/static/quit.svg";
     static const QString QUIT_HOVER_PATH = ":/static/quit.svg";
 };
+namespace api {
+    /// 工具栏button的类型
+    enum EnButtonType
+    {
+        CREATE_BUCKET = 1,
+        UPLOAD_FILE,
+        DOWNLOAD_FILE,
+        REFRESH_PAGE,
+        TRANSLATE_LIST,
+        SIGN_OUT,
+    };
+    /// 网关分流的api类型
+    enum LOGIN
+    {
+        NORMAL = 1,
+    };
+    enum BUCKETS
+    {
+        BLIST = 2,
+        BPUT,
+        BDEL
+    };
+    enum OBJECTS
+    {
+        OLIST = 5,
+        OPUT,
+        ODEL
+    };
 };
+}
 
 #endif // PUBLIC_H

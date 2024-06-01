@@ -2,11 +2,10 @@
 #include "src/uimain/uimainwidget.h"
 
 #include <UiBreadWidget.h>
-#include <BucketModel.h>
+#include <managermodel.h>
 #include <FileHelper.h>
 #include <UiPageWidget.h>
 #include <QApplication>
-
 
 int main(int argc, char *argv[])
 {
@@ -17,7 +16,8 @@ int main(int argc, char *argv[])
 
     UiLoginDialog w;
     int flag = w.exec();
-    BucketModel::instance()->setMockBuckets();
+    ManagerModel::instance()->setMockBuckets();
+    ManagerModel::instance()->setMockObjects();
     UiMainWidget m;
     if(flag == QDialog::Accepted)
     {

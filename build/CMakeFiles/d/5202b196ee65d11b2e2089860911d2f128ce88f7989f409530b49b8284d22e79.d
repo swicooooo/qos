@@ -345,20 +345,19 @@ qosbrowser_autogen/timestamp: \
   qosbrowser_autogen/moc_predefs.h \
   E:/qos/main.cpp \
   E:/qos/res.qrc \
+  E:/qos/src/center/gateway.cpp \
+  E:/qos/src/center/gateway.h \
+  E:/qos/src/center/managermodel.cpp \
+  E:/qos/src/center/managermodel.h \
+  E:/qos/src/center/qosplugin.cpp \
+  E:/qos/src/center/qosplugin.h \
+  E:/qos/src/dao/DaoCloudMock.h \
   E:/qos/src/dao/DaoClouds.h \
   E:/qos/src/dao/daocloudmock.cpp \
-  E:/qos/src/dao/daocloudmock.h \
+  E:/qos/src/dao/entityclass.h \
   E:/qos/src/helper/FileHelper.h \
   E:/qos/src/helper/Public.h \
   E:/qos/src/helper/Singleton.h \
-  E:/qos/src/helper/commonformat.h \
-  E:/qos/src/helper/gateway.cpp \
-  E:/qos/src/helper/gateway.h \
-  E:/qos/src/model/bucket.h \
-  E:/qos/src/model/bucketmodel.cpp \
-  E:/qos/src/model/bucketmodel.h \
-  E:/qos/src/plugins/qosplugin.cpp \
-  E:/qos/src/plugins/qosplugin.h \
   E:/qos/src/uicom/uibasedialog.cpp \
   E:/qos/src/uicom/uibasedialog.h \
   E:/qos/src/uicom/uibasedialog.ui \

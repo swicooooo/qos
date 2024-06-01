@@ -15,6 +15,9 @@ public:
     explicit UiObjectsTableWidget(QWidget *parent = nullptr);
     ~UiObjectsTableWidget();
 
+private slots:
+    void on_pushButtonBuckets_clicked();
+
 private:
     Ui::ObjectsWidget *ui;
 };

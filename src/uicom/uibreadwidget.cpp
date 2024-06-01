@@ -16,7 +16,7 @@ UiBreadWidget::UiBreadWidget(QWidget *parent)
     setPath("");
     // 当listview的item被点击后切换目录
     connect(ui->listView, &QListView::clicked, this, &UiBreadWidget::onItemClicked);
-    setFixedHeight(30);
+    setFixedHeight(35);
 }
 
 UiBreadWidget::~UiBreadWidget()

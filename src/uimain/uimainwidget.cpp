@@ -1,9 +1,9 @@
 #include "uimainwidget.h"
 #include "Public.h"
-#include "commonformat.h"
 #include "ui_uimainwidget.h"
 #include <QPushButton>
 #include <QDebug>
+#include <Gateway.h>
 
 UiMainWidget::UiMainWidget(QWidget *parent)
     : UiQosDialog(parent)
@@ -30,6 +30,9 @@ UiMainWidget::UiMainWidget(QWidget *parent)
     // 巧妙：对widgetToolBar发过来的信号统一处理
     // connect(ui->widgetToolBar, &ToolBarWidget::buttonClick, this, &MainWidget::onButtonClick);
     // ui->stackedWidget->setCurrentIndex(1);   Test
+
+    // 注册改变stackview页面的回调
+    Gateway::instance()->setStackChangeCallback(std::bind(&UiMainWidget::onStackChangeCallback,this,std::placeholders::_1));
 }
 
 UiMainWidget::~UiMainWidget()
@@ -41,10 +44,15 @@ void UiMainWidget::onButtonClick(int id)
 {
     // TODO  switch选择对button的具体处理
     switch (id) {
-    case btn::CREATE_BUCKET:
+    case global::api::CREATE_BUCKET:
         qDebug() << "CREATE_BUCKET...";
         break;
     default:
         break;
     }
+}
+
+void UiMainWidget::onStackChangeCallback(int flag)
+{
+    ui->stackedWidget->setCurrentIndex(flag);
 }

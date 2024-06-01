@@ -74,15 +74,39 @@
 	"HEADERS" : 
 	[
 		[
+			"E:/qos/src/center/gateway.h",
+			"MU",
+			"KR4S3ODAGS/moc_gateway.cpp",
+			null
+		],
+		[
+			"E:/qos/src/center/managermodel.h",
+			"MU",
+			"KR4S3ODAGS/moc_managermodel.cpp",
+			null
+		],
+		[
+			"E:/qos/src/center/qosplugin.h",
+			"MU",
+			"KR4S3ODAGS/moc_qosplugin.cpp",
+			null
+		],
+		[
+			"E:/qos/src/dao/DaoCloudMock.h",
+			"MU",
+			"QUKHX4KXBC/moc_DaoCloudMock.cpp",
+			null
+		],
+		[
 			"E:/qos/src/dao/DaoClouds.h",
 			"MU",
 			"QUKHX4KXBC/moc_DaoClouds.cpp",
 			null
 		],
 		[
-			"E:/qos/src/dao/daocloudmock.h",
+			"E:/qos/src/dao/entityclass.h",
 			"MU",
-			"QUKHX4KXBC/moc_daocloudmock.cpp",
+			"QUKHX4KXBC/moc_entityclass.cpp",
 			null
 		],
 		[
@@ -96,31 +120,6 @@
 			"E:/qos/src/helper/Singleton.h",
 			"MU",
 			"WROLH5MKTC/moc_Singleton.cpp",
-			null
-		],
-		[
-			"E:/qos/src/helper/commonformat.h",
-			"MU",
-			"WROLH5MKTC/moc_commonformat.cpp",
-			null
-		],
-		[
-			"E:/qos/src/helper/gateway.h",
-			"MU",
-			"WROLH5MKTC/moc_gateway.cpp",
-			null
-		],
-		[ "E:/qos/src/model/bucket.h", "MU", "VNQA4LF4BW/moc_bucket.cpp", null ],
-		[
-			"E:/qos/src/model/bucketmodel.h",
-			"MU",
-			"VNQA4LF4BW/moc_bucketmodel.cpp",
-			null
-		],
-		[
-			"E:/qos/src/plugins/qosplugin.h",
-			"MU",
-			"OX2KLQLOGU/moc_qosplugin.cpp",
 			null
 		],
 		[
@@ -215,8 +214,7 @@
 		"E:/qos/src/uidelegate",
 		"E:/qos/src/helper",
 		"E:/qos/src/dao",
-		"E:/qos/src/model",
-		"E:/qos/src/plugins",
+		"E:/qos/src/center",
 		"E:/qos/third",
 		"D:/qt/5.15.2/mingw81_64/include",
 		"D:/qt/5.15.2/mingw81_64/include/QtWidgets",
@@ -257,10 +255,10 @@
 	"SOURCES" : 
 	[
 		[ "E:/qos/main.cpp", "MU", null ],
+		[ "E:/qos/src/center/gateway.cpp", "MU", null ],
+		[ "E:/qos/src/center/managermodel.cpp", "MU", null ],
+		[ "E:/qos/src/center/qosplugin.cpp", "MU", null ],
 		[ "E:/qos/src/dao/daocloudmock.cpp", "MU", null ],
-		[ "E:/qos/src/helper/gateway.cpp", "MU", null ],
-		[ "E:/qos/src/model/bucketmodel.cpp", "MU", null ],
-		[ "E:/qos/src/plugins/qosplugin.cpp", "MU", null ],
 		[ "E:/qos/src/uicom/uibasedialog.cpp", "MU", null ],
 		[ "E:/qos/src/uicom/uibreadwidget.cpp", "MU", null ],
 		[ "E:/qos/src/uicom/uicomboline.cpp", "MU", null ],

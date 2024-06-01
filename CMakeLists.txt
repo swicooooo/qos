@@ -46,17 +46,14 @@ else()
             src/uicom/uibreadwidget.h src/uicom/uibreadwidget.cpp src/uicom/uibreadwidget.ui
             src/uicom/uipagewidget.h src/uicom/uipagewidget.cpp src/uicom/uipagewidget.ui
             src/uidelegate/uibucketdeleagte.h src/uidelegate/uibucketdeleagte.cpp
-            src/helper/commonformat.h src/helper/FileHelper.h src/helper/gateway.cpp src/helper/gateway.h src/helper/Singleton.h
-
-            src/model/bucket.h src/model/bucketmodel.cpp src/model/bucketmodel.h
-            src/dao/DaoClouds.h
-            src/dao/daocloudmock.h src/dao/daocloudmock.cpp
-            src/plugins/qosplugin.h src/plugins/qosplugin.cpp
-            src/uicom/uibasedialog.h src/uicom/uibasedialog.cpp src/uicom/uibasedialog.ui
-            src/helper/Public.h
             src/uicom/uiqosdialog.h src/uicom/uiqosdialog.cpp src/uicom/uiqosdialog.ui
             src/uicom/uicomboline.h src/uicom/uicomboline.cpp
+            src/uicom/uibasedialog.h src/uicom/uibasedialog.cpp src/uicom/uibasedialog.ui
             src/uimain/uibucketstablewidget.h src/uimain/uibucketstablewidget.cpp src/uimain/uibucketstablewidget.ui
+            src/dao/daocloudmock.cpp src/dao/DaoCloudMock.h src/dao/DaoClouds.h src/dao/entityclass.h
+            src/center/gateway.cpp src/center/gateway.h src/center/managermodel.cpp src/center/managermodel.h src/center/qosplugin.cpp src/center/qosplugin.h
+            src/helper/FileHelper.h src/helper/Public.h src/helper/Singleton.h
+
         )
     endif()
 endif()
@@ -69,8 +66,7 @@ include_directories(${PROJECT_SOURCE_DIR}/src/uilogin)
 include_directories(${PROJECT_SOURCE_DIR}/src/uidelegate)
 include_directories(${PROJECT_SOURCE_DIR}/src/helper)
 include_directories(${PROJECT_SOURCE_DIR}/src/dao)
-include_directories(${PROJECT_SOURCE_DIR}/src/model)
-include_directories(${PROJECT_SOURCE_DIR}/src/plugins)
+include_directories(${PROJECT_SOURCE_DIR}/src/center)
 
 include_directories(${PROJECT_SOURCE_DIR}/third)
 
