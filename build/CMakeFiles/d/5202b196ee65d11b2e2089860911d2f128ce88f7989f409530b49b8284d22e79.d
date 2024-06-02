@@ -353,6 +353,8 @@ qosbrowser_autogen/timestamp: \
   E:/qos/src/center/qosplugin.h \
   E:/qos/src/dao/DaoCloudMock.h \
   E:/qos/src/dao/DaoClouds.h \
+  E:/qos/src/dao/daocloudcos.cpp \
+  E:/qos/src/dao/daocloudcos.h \
   E:/qos/src/dao/daocloudmock.cpp \
   E:/qos/src/dao/entityclass.h \
   E:/qos/src/helper/FileHelper.h \

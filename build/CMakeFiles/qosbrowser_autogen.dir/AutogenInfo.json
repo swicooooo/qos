@@ -104,6 +104,12 @@
 			null
 		],
 		[
+			"E:/qos/src/dao/daocloudcos.h",
+			"MU",
+			"QUKHX4KXBC/moc_daocloudcos.cpp",
+			null
+		],
+		[
 			"E:/qos/src/dao/entityclass.h",
 			"MU",
 			"QUKHX4KXBC/moc_entityclass.cpp",
@@ -258,6 +264,7 @@
 		[ "E:/qos/src/center/gateway.cpp", "MU", null ],
 		[ "E:/qos/src/center/managermodel.cpp", "MU", null ],
 		[ "E:/qos/src/center/qosplugin.cpp", "MU", null ],
+		[ "E:/qos/src/dao/daocloudcos.cpp", "MU", null ],
 		[ "E:/qos/src/dao/daocloudmock.cpp", "MU", null ],
 		[ "E:/qos/src/uicom/uibasedialog.cpp", "MU", null ],
 		[ "E:/qos/src/uicom/uibreadwidget.cpp", "MU", null ],

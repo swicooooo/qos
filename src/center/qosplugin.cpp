@@ -1,10 +1,11 @@
 #include "qosplugin.h"
 
-#include <DaoCloudMock.h>
+#include <DaoCloudCos.h>
 
 void QosPlugin::installPlugin()
 {
-    cloud_ = new DaoCloudMock(":/static/mockTest.json");
+    // cloud_ = new DaoCloudMock(":/static/mockTest.json");
+    cloud_ = new DaoCloudCos("");
 }
 
 QosPlugin::QosPlugin()

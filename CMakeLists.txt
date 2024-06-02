@@ -53,6 +53,7 @@ else()
             src/dao/daocloudmock.cpp src/dao/DaoCloudMock.h src/dao/DaoClouds.h src/dao/entityclass.h
             src/center/gateway.cpp src/center/gateway.h src/center/managermodel.cpp src/center/managermodel.h src/center/qosplugin.cpp src/center/qosplugin.h
             src/helper/FileHelper.h src/helper/Public.h src/helper/Singleton.h
+            src/dao/daocloudcos.h src/dao/daocloudcos.cpp
 
         )
     endif()
