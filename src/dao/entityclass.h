@@ -25,4 +25,11 @@ struct Object : public BaseObject
     QString dir;
 };
 
+/// 表示登录用户信息的类
+struct User
+{
+    QString secretId;
+    QString secretKey;
+};
+
 #endif // ENTITYCLASS_H

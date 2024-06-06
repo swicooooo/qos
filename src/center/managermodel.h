@@ -9,10 +9,12 @@
 class ManagerModel: public Singleton<ManagerModel>
 {
 public:
+    ////////////clear///////////////
     void setMockBuckets();  // 模拟buckets数据
     void setMockObjects();  // 模拟objects数据
     void setBuckets(const QList<Bucket> &buckets);  // 通过云服务返回的buckets设置
     void setObjects(const QList<Object> &buckets);  // 通过云服务返回的objects设置
+    ////////////clear///////////////
     QStandardItemModel* modelBuckets() { return modelBuckets_; }
     QStandardItemModel *modelObjects() { return modelObjects_; };
 

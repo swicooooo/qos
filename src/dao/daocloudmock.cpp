@@ -1,47 +1,74 @@
 #include "daocloudmock.h"
-
-#include <FileHelper.h>
+#include "osmockdata.h"
 
 DaoCloudMock::DaoCloudMock(const QString &path)
-{
-    json_ = nlohmann::json::parse(FileHelper::readFileAll(path).toStdString());
-}
+{}
 
 QList<Bucket> DaoCloudMock::buckets()
 {
-    QList<Bucket> res;
-    std::vector<nlohmann::json> arr = json_["buckets"];
-    for (const auto &a : arr) {
-        Bucket bucket;
-        bucket.name = QString::fromStdString(a["name"]);
-        bucket.location = QString::fromStdString(a["location"]);
-        bucket.createDate = QString::fromStdString(a["create_date"]);
-        res.append(bucket);
-        qDebug() << bucket.name << bucket.location << bucket.createDate;
-    }
-    return res;
+    return OSMockData::instance()->mockBuckets();
 }
 
 QList<Object> DaoCloudMock::objects()
 {
-    QList<Object> res;
-    std::vector<nlohmann::json> arr = json_["objects"];
-    for (const auto &a : arr) {
-        Object object;
-        object.name = QString::fromStdString(a["name"]);
-        object.lastmodified = QString::fromStdString(a["lastmodified"]);
-        object.size = a["size"].get<int>();
-        res.append(object);
-        qDebug() << object.name << object.lastmodified << object.size;
-    }
-    return res;
+    return OSMockData::instance()->mockObjects();
 }
 
 QList<Bucket> DaoCloudMock::login(const QString &secretId, const QString &secretKey, bool &flag)
 {
     // TODO 登录操作，向数据请求数据
+    // auto users = OSMockData::instance()->mockUsers();
+    // for(const auto &u : users)
+    // {
+    //     if(u.secretId == secretId && u.secretKey == secretKey)
+    //     {
+    //         // TODO 返回true，返回buckets，在ui端设置Buckets数据
+    //     }
+    // }
     flag = true;
     return this->buckets();
+}
+
+bool DaoCloudMock::isBucketExists(const QString &bucketName)
+{
+    for(const auto &b : this->buckets())
+    {
+        if(b.name == bucketName) return true;
+    }
+    return false;
+}
+
+QString DaoCloudMock::getBucketLocation(const QString &bucketName)
+{
+    auto locations = OSMockData::instance()->mockLocations();
+    for (auto it = locations.constBegin(); it != locations.constEnd(); ++it)
+    {
+        if(it.value().contains(bucketName))
+        {
+            return it.key();
+        }
+    }
+    return QString();
+}
+
+void DaoCloudMock::putBucket(const QString &bucketName, const QString &location)
+{
+    if(isBucketExists(bucketName))
+    {
+        return;
+    }
+    // TODO上传文件
+
+}
+
+void DaoCloudMock::deleteBucket(const QString &bucketName)
+{
+    if(!isBucketExists(bucketName))
+    {
+        return;
+    }
+    // TODO 删除文件
+    QString location = getBucketLocation(bucketName);
 }
 
 void DaoCloudMock::getObjects(const QString &bucketName, const QString &dir)

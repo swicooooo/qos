@@ -5,6 +5,7 @@
 
 namespace global
 {
+/// 静态资源路径
 namespace path
 {
     static const QString LOGO_PATH = ":/static/logo.png";

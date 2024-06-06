@@ -2,6 +2,7 @@
 #include "ui_uilogindialog.h"
 
 #include <nlohmann/json.hpp>
+#include <ManagerModel.h>
 #include <QKeyEvent>
 #include <gateway.h>
 
@@ -52,6 +53,9 @@ void UiLoginDialog::onLoginCallback(bool flag)
 {
     if(flag)
     {
+        // 设置模拟数据，并accept
+        ManagerModel::instance()->setMockBuckets();
+        ManagerModel::instance()->setMockObjects();
         accept();
     }
     else

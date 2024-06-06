@@ -86,6 +86,12 @@
 			null
 		],
 		[
+			"E:/qos/src/center/osmockdata.h",
+			"MU",
+			"KR4S3ODAGS/moc_osmockdata.cpp",
+			null
+		],
+		[
 			"E:/qos/src/center/qosplugin.h",
 			"MU",
 			"KR4S3ODAGS/moc_qosplugin.cpp",
@@ -101,12 +107,6 @@
 			"E:/qos/src/dao/DaoClouds.h",
 			"MU",
 			"QUKHX4KXBC/moc_DaoClouds.cpp",
-			null
-		],
-		[
-			"E:/qos/src/dao/daocloudcos.h",
-			"MU",
-			"QUKHX4KXBC/moc_daocloudcos.cpp",
 			null
 		],
 		[
@@ -263,8 +263,8 @@
 		[ "E:/qos/main.cpp", "MU", null ],
 		[ "E:/qos/src/center/gateway.cpp", "MU", null ],
 		[ "E:/qos/src/center/managermodel.cpp", "MU", null ],
+		[ "E:/qos/src/center/osmockdata.cpp", "MU", null ],
 		[ "E:/qos/src/center/qosplugin.cpp", "MU", null ],
-		[ "E:/qos/src/dao/daocloudcos.cpp", "MU", null ],
 		[ "E:/qos/src/dao/daocloudmock.cpp", "MU", null ],
 		[ "E:/qos/src/uicom/uibasedialog.cpp", "MU", null ],
 		[ "E:/qos/src/uicom/uibreadwidget.cpp", "MU", null ],

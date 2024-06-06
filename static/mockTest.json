@@ -16,6 +16,10 @@
         {
             "secretId": "0",
             "secretKey": "0"
+        },
+        {
+            "secretId": "admin",
+            "secretKey": "admin"
         }
     ],
 
@@ -33,7 +37,18 @@
             "dir": "",
             "name": "test2.txt"
         }
-    ]
+    ],
+
+    "locations": {
+        "dazhou": [
+            "bucket1-1300416379",
+            "bucket2-1300416380"
+        ],
+        "chengdu": [
+            "bucket3-1300416379",
+            "bucket4-1300416380"
+        ]
+    }
 }
 
 

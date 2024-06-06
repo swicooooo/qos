@@ -16,8 +16,6 @@ int main(int argc, char *argv[])
 
     UiLoginDialog w;
     int flag = w.exec();
-    ManagerModel::instance()->setMockBuckets();
-    ManagerModel::instance()->setMockObjects();
     UiMainWidget m;
     if(flag == QDialog::Accepted)
     {

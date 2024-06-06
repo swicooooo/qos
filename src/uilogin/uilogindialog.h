@@ -18,8 +18,8 @@ protected:
     bool eventFilter(QObject *watched, QEvent *event) override;
 
 private slots:
-    void onPushButtonLoginClicked();
-    void onLoginCallback(bool flag);
+    void onPushButtonLoginClicked();    // 向网关发送登录请求
+    void onLoginCallback(bool flag);    // 登录请求的回调函数
 
 private:
     Ui::LoginDialog *ui;
