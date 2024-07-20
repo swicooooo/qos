@@ -1,5 +1,6 @@
 E:/qos/build/qosbrowser_autogen/4RPRYGBBPX/moc_uilogindialog.cpp: E:/qos/src/uilogin/uilogindialog.h \
   E:/qos/build/qosbrowser_autogen/moc_predefs.h \
+  D:/qt/5.15.2/mingw81_64/include/QtCore/QString \
   D:/qt/5.15.2/mingw81_64/include/QtCore/qalgorithms.h \
   D:/qt/5.15.2/mingw81_64/include/QtCore/qarraydata.h \
   D:/qt/5.15.2/mingw81_64/include/QtCore/qatomic.h \
@@ -257,5 +258,6 @@ E:/qos/build/qosbrowser_autogen/4RPRYGBBPX/moc_uilogindialog.cpp: E:/qos/src/uil
   D:/qt/Tools/mingw810_64/x86_64-w64-mingw32/include/vadefs.h \
   D:/qt/Tools/mingw810_64/x86_64-w64-mingw32/include/wchar.h \
   D:/qt/Tools/mingw810_64/x86_64-w64-mingw32/include/wctype.h \
+  E:/qos/src/dao/entityclass.h \
   E:/qos/src/uicom/UiBaseDialog.h \
   E:/qos/src/uicom/UiQosDialog.h

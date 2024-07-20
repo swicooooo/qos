@@ -15,6 +15,7 @@ public:
     explicit UiBucketsTableWidget(QWidget *parent = nullptr);
     ~UiBucketsTableWidget();
 private slots:
+    // 点击桶名称进入对象列表, 有mainwidget更新stackwidget信息
     void on_tableView_doubleClicked(const QModelIndex &index);
 
 private:

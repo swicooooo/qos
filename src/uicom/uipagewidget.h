@@ -37,7 +37,7 @@ private slots:
     void onCurrentPageSelected(const QString &text);
     void onMaxRowItemSelected(const QString &text);
 private:
-    void setPageCount();                    //  设置页号选择列表
+    void setPageCount();                    // 设置页号选择列表
     void reset();                           // 重置为首页
     void switchPage(int newCurrentPage);    // 切换页码
 

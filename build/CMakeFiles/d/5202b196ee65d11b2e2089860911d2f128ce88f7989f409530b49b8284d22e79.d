@@ -1,5 +1,6 @@
 qosbrowser_autogen/timestamp: \
   D:/qt/5.15.2/mingw81_64/include/QtCore/QObject \
+  D:/qt/5.15.2/mingw81_64/include/QtCore/QString \
   D:/qt/5.15.2/mingw81_64/include/QtCore/qabstractitemmodel.h \
   D:/qt/5.15.2/mingw81_64/include/QtCore/qalgorithms.h \
   D:/qt/5.15.2/mingw81_64/include/QtCore/qarraydata.h \

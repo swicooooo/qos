@@ -46,16 +46,17 @@ void UiLoginDialog::onPushButtonLoginClicked()
     params["secretId"] = ui->lineEditSecretid->text().trimmed().toStdString();
     params["secretKey"] = ui->lineEditSecretkey->text().trimmed().toStdString();
     Gateway::instance()->send(global::api::LOGIN::NORMAL, params);
-    Gateway::instance()->setLoginCallback(std::bind(&UiLoginDialog::onLoginCallback,this,std::placeholders::_1));
+    Gateway::instance()->setLoginCallback(std::bind(&UiLoginDialog::onLoginCallback,
+                                                    this,std::placeholders::_1,std::placeholders::_2));
 }
 
-void UiLoginDialog::onLoginCallback(bool flag)
+void UiLoginDialog::onLoginCallback(bool flag, QList<Bucket> &buckets)
 {
     if(flag)
     {
         // 设置模拟数据，并accept
-        ManagerModel::instance()->setMockBuckets();
-        ManagerModel::instance()->setMockObjects();
+        ManagerModel::instance()->setBuckets(buckets);
+        // ManagerModel::instance()->setObjects();
         accept();
     }
     else

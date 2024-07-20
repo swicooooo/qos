@@ -1,17 +1,4 @@
 {
-    "buckets": [
-        {
-            "create_date": "2019-10-12T06:14:21Z",
-            "location": "ap-shanghai",
-            "name": "bucket1-1300416379"
-        },
-        {
-            "create_date": "2023-10-12T07:14:21Z",
-            "location": "ap-shanghai",
-            "name": "bucket2-1300416380"
-        }
-    ],
-
     "users": [
         {
             "secretId": "0",
@@ -23,32 +10,50 @@
         }
     ],
 
-    "objects": [
-        {
-            "lastmodified": "2019-10-12T06:14:21Z",
-            "size": 2024,
-            "dir": "",
-            "name": "test1.txt"
-        },
-        {
-
-            "lastmodified": "2023-10-12T07:14:21Z",
-            "size": 102400,
-            "dir": "",
-            "name": "test2.txt"
-        }
-    ],
-
     "locations": {
         "dazhou": [
-            "bucket1-1300416379",
-            "bucket2-1300416380"
-        ],
-        "chengdu": [
-            "bucket3-1300416379",
-            "bucket4-1300416380"
+            {
+                "create_date": "2010-10-12T06:14:21Z",
+                "location": "ap-shanghai",
+                "bucketname": "bucket1-1300416379",
+                "objects": [
+                    {
+                        "lastmodified": "2019-10-12T06:14:21Z",
+                        "size": 2024,
+                        "dir": "",
+                        "objectname": "test1.txt"
+                    },
+                    {
+                        "lastmodified": "2020-10-12T07:14:21Z",
+                        "size": 102400,
+                        "dir": "test",
+                        "objectname": "test2.txt"
+                    }
+                ]
+            },
+
+            {
+                "create_date": "2010-11-12T07:14:21Z",
+                "location": "ap-sichuan",
+                "bucketname": "bucket2-1300416379",
+                "objects": [
+                    {
+                        "lastmodified": "2021-10-12T06:14:21Z",
+                        "size": 2024,
+                        "dir": "",
+                        "objectname": "test3.txt"
+                    },
+                    {
+                        "lastmodified": "2022-10-12T07:14:21Z",
+                        "size": 102400,
+                        "dir": "test",
+                        "objectname": "test4.txt"
+                    }
+                ]
+            }
         ]
     }
 }
+
 
 

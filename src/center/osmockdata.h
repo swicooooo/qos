@@ -11,13 +11,14 @@ class OSMockData : public Singleton<OSMockData>
 {
 public:
     friend class Singleton<OSMockData>;
-    QList<Bucket> mockBuckets();                    // 模拟桶集合
-    QList<Object> mockObjects();                    // 模拟桶内的对象集合
-    QList<User> mockUsers();                        // 模拟登录用户集合
-    QMap<QString, QList<QString>> mockLocations();  // 模拟登录用户集合
+    void mockData();        // 解包mock的各部分数据
+
 
 private:
     OSMockData();
+    QMap<QString, QList<Bucket>> mockLocations_;  // 模拟位置信息集合
+    QMap<QString, QList<Object>> mockBucket_;     // 模拟桶内的对象集合
+    QList<User> mockUsers_;                       // 模拟登录用户集合
     nlohmann::json json_;;
 };
 

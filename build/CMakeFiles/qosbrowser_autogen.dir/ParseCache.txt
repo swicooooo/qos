@@ -1618,6 +1618,7 @@ E:/qos/src/uidelegate/uibucketdeleagte.h
  mdp:E:/qos/src/uidelegate/uibucketdeleagte.h
 E:/qos/src/uilogin/uilogindialog.h
  mmc:Q_OBJECT
+ mdp:D:/qt/5.15.2/mingw81_64/include/QtCore/QString
  mdp:D:/qt/5.15.2/mingw81_64/include/QtCore/qalgorithms.h
  mdp:D:/qt/5.15.2/mingw81_64/include/QtCore/qarraydata.h
  mdp:D:/qt/5.15.2/mingw81_64/include/QtCore/qatomic.h
@@ -1876,6 +1877,7 @@ E:/qos/src/uilogin/uilogindialog.h
  mdp:D:/qt/Tools/mingw810_64/x86_64-w64-mingw32/include/wchar.h
  mdp:D:/qt/Tools/mingw810_64/x86_64-w64-mingw32/include/wctype.h
  mdp:E:/qos/build/qosbrowser_autogen/moc_predefs.h
+ mdp:E:/qos/src/dao/entityclass.h
  mdp:E:/qos/src/uicom/uibasedialog.h
  mdp:E:/qos/src/uicom/uiqosdialog.h
  mdp:E:/qos/src/uilogin/uilogindialog.h

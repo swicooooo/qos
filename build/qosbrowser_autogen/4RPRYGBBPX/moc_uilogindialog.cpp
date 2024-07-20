@@ -10,6 +10,7 @@
 #include "../../../src/uilogin/uilogindialog.h"
 #include <QtCore/qbytearray.h>
 #include <QtCore/qmetatype.h>
+#include <QtCore/QList>
 #if !defined(Q_MOC_OUTPUT_REVISION)
 #error "The header file 'uilogindialog.h' doesn't include <QObject>."
 #elif Q_MOC_OUTPUT_REVISION != 67
@@ -22,8 +23,8 @@ QT_BEGIN_MOC_NAMESPACE
 QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
 struct qt_meta_stringdata_UiLoginDialog_t {
-    QByteArrayData data[5];
-    char stringdata0[61];
+    QByteArrayData data[7];
+    char stringdata0[84];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
@@ -36,11 +37,14 @@ QT_MOC_LITERAL(0, 0, 13), // "UiLoginDialog"
 QT_MOC_LITERAL(1, 14, 24), // "onPushButtonLoginClicked"
 QT_MOC_LITERAL(2, 39, 0), // ""
 QT_MOC_LITERAL(3, 40, 15), // "onLoginCallback"
-QT_MOC_LITERAL(4, 56, 4) // "flag"
+QT_MOC_LITERAL(4, 56, 4), // "flag"
+QT_MOC_LITERAL(5, 61, 14), // "QList<Bucket>&"
+QT_MOC_LITERAL(6, 76, 7) // "buckets"
 
     },
     "UiLoginDialog\0onPushButtonLoginClicked\0"
-    "\0onLoginCallback\0flag"
+    "\0onLoginCallback\0flag\0QList<Bucket>&\0"
+    "buckets"
 };
 #undef QT_MOC_LITERAL
 
@@ -59,11 +63,11 @@ static const uint qt_meta_data_UiLoginDialog[] = {
 
  // slots: name, argc, parameters, tag, flags
        1,    0,   24,    2, 0x08 /* Private */,
-       3,    1,   25,    2, 0x08 /* Private */,
+       3,    2,   25,    2, 0x08 /* Private */,
 
  // slots: parameters
     QMetaType::Void,
-    QMetaType::Void, QMetaType::Bool,    4,
+    QMetaType::Void, QMetaType::Bool, 0x80000000 | 5,    4,    6,
 
        0        // eod
 };
@@ -75,7 +79,7 @@ void UiLoginDialog::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _i
         Q_UNUSED(_t)
         switch (_id) {
         case 0: _t->onPushButtonLoginClicked(); break;
-        case 1: _t->onLoginCallback((*reinterpret_cast< bool(*)>(_a[1]))); break;
+        case 1: _t->onLoginCallback((*reinterpret_cast< bool(*)>(_a[1])),(*reinterpret_cast< QList<Bucket>(*)>(_a[2]))); break;
         default: ;
         }
     }

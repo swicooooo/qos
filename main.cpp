@@ -6,6 +6,7 @@
 #include <FileHelper.h>
 #include <UiPageWidget.h>
 #include <QApplication>
+#include <OSMockData.h>
 
 int main(int argc, char *argv[])
 {

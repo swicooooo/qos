@@ -37,7 +37,7 @@ void Gateway::apiLogin(const nlohmann::json &params)
     QString secretKey = QString::fromStdString(params["secretKey"]);
     bool flag = false;
     QList<Bucket> buckets = QosPlugin::instance()->cloud()->login(secretId, secretKey, flag);
-    loginCallback_(flag);    // 执行回调处理登录结果
+    loginCallback_(flag, buckets);    // 执行回调处理登录结果
 }
 
 void Gateway::apiGetBuckets(const nlohmann::json &params)

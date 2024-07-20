@@ -39,7 +39,6 @@ void UiBucketsTableWidget::on_tableView_doubleClicked(const QModelIndex &index)
 {
     if(index.column() == 0)
     {
-        // 点击桶名称进入对象列表
         nlohmann::json params;
         params["name"] = index.data().toString().toStdString();
         params["dir"] = "";

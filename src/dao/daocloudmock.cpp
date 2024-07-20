@@ -6,12 +6,17 @@ DaoCloudMock::DaoCloudMock(const QString &path)
 
 QList<Bucket> DaoCloudMock::buckets()
 {
-    return OSMockData::instance()->mockBuckets();
+    return QList<Bucket>();
 }
 
-QList<Object> DaoCloudMock::objects()
+QList<Object> DaoCloudMock::getObjects(const QString &bucketName, const QString &dir)
 {
-    return OSMockData::instance()->mockObjects();
+    QString path;
+    if(!dir.isEmpty())  path += dir;
+
+    QString location = getBucketLocation(bucketName);
+
+    return QList<Object>();
 }
 
 QList<Bucket> DaoCloudMock::login(const QString &secretId, const QString &secretKey, bool &flag)
@@ -40,14 +45,11 @@ bool DaoCloudMock::isBucketExists(const QString &bucketName)
 
 QString DaoCloudMock::getBucketLocation(const QString &bucketName)
 {
-    auto locations = OSMockData::instance()->mockLocations();
-    for (auto it = locations.constBegin(); it != locations.constEnd(); ++it)
-    {
-        if(it.value().contains(bucketName))
-        {
-            return it.key();
-        }
-    }
+    // auto locations = OSMockData::instance()->mockLocations();
+    // for (auto it = locations.constBegin(); it != locations.constEnd(); ++it)
+    // {
+    //     if(it.value().contains(bucketName)) return it.key();
+    // }
     return QString();
 }
 
@@ -71,7 +73,17 @@ void DaoCloudMock::deleteBucket(const QString &bucketName)
     QString location = getBucketLocation(bucketName);
 }
 
-void DaoCloudMock::getObjects(const QString &bucketName, const QString &dir)
+QList<Object> DaoCloudMock::getDirOrFileList(const QString &delimiter, const QString &dir)
 {
+    QList<Object> dirList, fileList;
+    // auto objects = OSMockData::instance()->mockObjects();
+    // for (auto it = objects.constBegin(); it != objects.constEnd(); ++it)
+    // {
+    //     // 遍历 objects获取key为dir的键值
+    //     for (const auto &o : it.value())
+    //     {
 
+    //     }
+    // }
+    return QList<Object>();
 }
