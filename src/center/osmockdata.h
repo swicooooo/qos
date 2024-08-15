@@ -12,7 +12,10 @@ class OSMockData : public Singleton<OSMockData>
 public:
     friend class Singleton<OSMockData>;
     void mockData();        // 解包mock的各部分数据
-
+    QList<Bucket> mockBuckets();
+    QMap<QString, QList<Object>> mockObjects();
+    QList<User> mockUsers();
+    QMap<QString, QList<QString>> mockLocations();
 
 private:
     OSMockData();

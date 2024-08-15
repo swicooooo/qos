@@ -37,7 +37,7 @@
       </widget>
      </item>
      <item>
-      <widget class="ComboLine" name="lineEditMaxRows">
+      <widget class="UiComboLine" name="lineEditMaxRows">
        <property name="maximumSize">
         <size>
          <width>30</width>
@@ -67,7 +67,7 @@
       </widget>
      </item>
      <item>
-      <widget class="ComboLine" name="lineEditCurrentPage">
+      <widget class="UiComboLine" name="lineEditCurrentPage">
        <property name="maximumSize">
         <size>
          <width>30</width>
@@ -102,9 +102,9 @@
  </widget>
  <customwidgets>
   <customwidget>
-   <class>ComboLine</class>
+   <class>UiComboLine</class>
    <extends>QLineEdit</extends>
-   <header location="global">comboline.h</header>
+   <header location="global">uicomboline.h</header>
   </customwidget>
  </customwidgets>
  <resources/>
