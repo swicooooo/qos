@@ -15,6 +15,8 @@ int main(int argc, char *argv[])
     QString qssStr = FileHelper::readFileAll(":/static/default.qss");
     a.setStyleSheet(qssStr);
 
+    OSMockData::instance()->mockData();
+
     UiLoginDialog w;
     int flag = w.exec();
     UiMainWidget m;

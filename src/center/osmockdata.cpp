@@ -1,11 +1,6 @@
 #include "osmockdata.h"
 #include <FileHelper.h>
 
-/**
- * @brief OSMockData::mockData
- * location--buckets    map<string,list<bucket>>
- * bucket--objects      map<string,list<object>>
- */
 void OSMockData::mockData()
 {
     // 解析user部分
@@ -50,79 +45,6 @@ void OSMockData::mockData()
         }
         mockLocations_.insert(QString::fromStdString(l.key()), buckets);
     }
-}
-
-QList<Bucket> OSMockData::mockBuckets()
-{
-    QList<Bucket> res;
-    std::vector<nlohmann::json> arr = json_["buckets"];
-    for (const auto &a : arr)
-    {
-        Bucket bucket;
-        bucket.name = QString::fromStdString(a["name"]);
-        bucket.location = QString::fromStdString(a["location"]);
-        bucket.createDate = QString::fromStdString(a["create_date"]);
-        res.append(bucket);
-        qDebug() << bucket.name << bucket.location << bucket.createDate;
-    }
-    return res;
-}
-
-QMap<QString, QList<Object>> OSMockData::mockObjects()
-{
-    QMap<QString, QList<Object>> res;
-    for (const auto &object : json_["objects"].items())
-    {
-        QList<Object> values;
-        for (const auto &object : object.value())
-        {
-            Object o;
-            o.name = QString::fromStdString(object["name"]);
-            o.lastmodified = QString::fromStdString(object["lastmodified"]);
-            o.size = object["size"].get<int>();
-            o.dir = QString::fromStdString(object["dir"]);
-            values.push_back(o);
-        }
-        res.insert(object.key().data(), values);
-        // print
-        qDebug() << object.key().data();
-        for (const auto &v : values)
-        {
-            qDebug() << v.name << v.lastmodified << v.size << v.dir;
-        }
-    }
-    return res;
-}
-
-QList<User> OSMockData::mockUsers()
-{
-    QList<User> res;
-    std::vector<nlohmann::json> arr = json_["users"];
-    for (const auto &a : arr)
-    {
-        User user;
-        user.secretId = QString::fromStdString(a["secretId"]);
-        user.secretKey = QString::fromStdString(a["secretKey"]);
-        res.append(user);
-        qDebug() << user.secretId << user.secretKey;
-    }
-    return res;
-}
-
-QMap<QString, QList<QString>> OSMockData::mockLocations()
-{
-    QMap<QString, QList<QString>> res;
-    for (const auto &location : json_["locations"].items())
-    {
-        QList<QString> values;
-        for (const auto &bucket : location.value())
-        {
-            values.push_back(QString::fromStdString(bucket.dump()));
-        }
-        res.insert(location.key().data(), values);
-        qDebug() << location.key().data() << values;
-    }
-    return res;
 }
 
 OSMockData::OSMockData()

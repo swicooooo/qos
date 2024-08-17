@@ -9,26 +9,21 @@ void Gateway::send(int api, const nlohmann::json &params)
 {
     // 开启新线程分发前端发来的api请求
     std::thread([=](){
-        this->dispatch(api, params);
+        switch (api)
+        {
+        case global::api::LOGIN::NORMAL:
+            this->apiLogin(params);
+            break;
+        case global::api::BUCKETS::BLIST:
+            this->apiGetBuckets(params);
+            break;
+        case global::api::OBJECTS::OLIST:
+            this->apiGetObjects(params);
+            break;
+        default:
+            break;
+        }
     }).detach();
-}
-
-void Gateway::dispatch(int api, const nlohmann::json &params)
-{
-    switch (api)
-    {
-    case global::api::LOGIN::NORMAL:
-        this->apiLogin(params);
-        break;
-    case global::api::BUCKETS::BLIST:
-        this->apiGetBuckets(params);
-        break;
-    case global::api::OBJECTS::OLIST:
-        this->apiGetObjects(params);
-        break;
-    default:
-        break;
-    }
 }
 
 void Gateway::apiLogin(const nlohmann::json &params)

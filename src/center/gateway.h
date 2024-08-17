@@ -17,7 +17,6 @@ public:
 private:
     friend class Singleton<Gateway>;
     Gateway() = default;
-    void dispatch(int api, const nlohmann::json &params);// 分流api请求
     void apiLogin(const nlohmann::json &params);         // 登录请求
     void apiGetBuckets(const nlohmann::json &params);    // 桶操作请求列表
     void apiGetObjects(const nlohmann::json &params);    // 对象操作请求列表

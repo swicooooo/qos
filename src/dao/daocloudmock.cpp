@@ -6,7 +6,7 @@ DaoCloudMock::DaoCloudMock(const QString &path)
 
 QList<Bucket> DaoCloudMock::buckets()
 {
-    return QList<Bucket>();
+    return OSMockData::instance()->mockLocations().value("dazhou");
 }
 
 QList<Object> DaoCloudMock::getObjects(const QString &bucketName, const QString &dir)
