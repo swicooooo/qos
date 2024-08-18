@@ -37,14 +37,15 @@ void Gateway::apiLogin(const nlohmann::json &params)
 
 void Gateway::apiGetBuckets(const nlohmann::json &params)
 {
-    stackChangeCallback_(0);
+    QList<Object> objects;
+    stackChangeCallback_(0, objects);
 }
 
 void Gateway::apiGetObjects(const nlohmann::json &params)
 {
     QString bucketName = QString::fromStdString(params["name"]);
     QString dir = QString::fromStdString(params["dir"]);
-    QosPlugin::instance()->cloud()->getObjects(bucketName, dir);
-    stackChangeCallback_(1);
+    QList<Object> objects = QosPlugin::instance()->cloud()->getObjects(bucketName, dir);
+    stackChangeCallback_(1, objects);
 }
 

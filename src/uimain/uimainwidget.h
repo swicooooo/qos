@@ -2,6 +2,7 @@
 #define UIMAINWIDGET_H
 
 #include <UiQosDialog.h>
+#include <entityclass.h>
 
 namespace Ui {
 class MainWidget;
@@ -17,7 +18,7 @@ public:
 
 private slots:
     void onButtonClick(int id);
-    void onStackChangeCallback(int flag);
+    void onStackChangeCallback(bool flag,  QList<Object> &objects);
 
 private:
     Ui::MainWidget *ui;

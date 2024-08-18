@@ -4,6 +4,7 @@
 #include <QPushButton>
 #include <QDebug>
 #include <Gateway.h>
+#include <ManagerModel.h>
 
 UiMainWidget::UiMainWidget(QWidget *parent)
     : UiQosDialog(parent)
@@ -32,7 +33,8 @@ UiMainWidget::UiMainWidget(QWidget *parent)
     // ui->stackedWidget->setCurrentIndex(1);   Test
 
     // 注册改变stackview页面的回调
-    Gateway::instance()->setStackChangeCallback(std::bind(&UiMainWidget::onStackChangeCallback,this,std::placeholders::_1));
+    Gateway::instance()->setStackChangeCallback(std::bind(&UiMainWidget::onStackChangeCallback,this,
+                                                          std::placeholders::_1,std::placeholders::_2));
 }
 
 UiMainWidget::~UiMainWidget()
@@ -52,7 +54,8 @@ void UiMainWidget::onButtonClick(int id)
     }
 }
 
-void UiMainWidget::onStackChangeCallback(int flag)
+void UiMainWidget::onStackChangeCallback(bool flag, QList<Object> &objects)
 {
+    ManagerModel::instance()->setObjects(objects);
     ui->stackedWidget->setCurrentIndex(flag);
 }

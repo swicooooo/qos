@@ -11,12 +11,7 @@ QList<Bucket> DaoCloudMock::buckets()
 
 QList<Object> DaoCloudMock::getObjects(const QString &bucketName, const QString &dir)
 {
-    QString path;
-    if(!dir.isEmpty())  path += dir;
-
-    QString location = getBucketLocation(bucketName);
-
-    return QList<Object>();
+    return OSMockData::instance()->mockBucket().value(bucketName);
 }
 
 QList<Bucket> DaoCloudMock::login(const QString &secretId, const QString &secretKey, bool &flag)

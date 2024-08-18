@@ -56,7 +56,7 @@ void UiLoginDialog::onLoginCallback(bool flag, QList<Bucket> &buckets)
     {
         // 设置模拟数据，并accept
         ManagerModel::instance()->setBuckets(buckets);
-        // ManagerModel::instance()->setObjects();
+
         accept();
     }
     else
