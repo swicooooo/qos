@@ -14,6 +14,8 @@ UiBucketsTableWidget::UiBucketsTableWidget(QWidget *parent)
 {
     ui->setupUi(this);
 
+    ui->widgetPage->setMaxRowList({10, 20, 50});
+
     // 指定model数据来源，指定某行的代理数据
     ui->tableView->setModel(ManagerModel::instance()->modelBuckets());
     ui->tableView->setItemDelegateForColumn(1, new UiBucketDeleagte());
@@ -27,6 +29,12 @@ UiBucketsTableWidget::UiBucketsTableWidget(QWidget *parent)
     ui->tableView->verticalHeader()->setHidden(true);
     ui->tableView->setSortingEnabled(true);     // 通过model指定排序规则
 
+    connect(ui->widgetPage, &UiPageWidget::pageNumChanged, this, &UiBucketsTableWidget::onPageNumChanged);
+    connect(ui->tableView->model(), &QAbstractItemModel::rowsInserted, this, &UiBucketsTableWidget::onTableRowsChanged);
+    connect(ui->tableView->model(), &QAbstractItemModel::rowsRemoved, this, &UiBucketsTableWidget::onTableRowsChanged);
+    connect(ui->tableView->model(), &QAbstractItemModel::modelReset, this, &UiBucketsTableWidget::onTableRowsChanged);
+
+    onTableRowsChanged();
 }
 
 UiBucketsTableWidget::~UiBucketsTableWidget()
@@ -34,6 +42,22 @@ UiBucketsTableWidget::~UiBucketsTableWidget()
     delete ui;
 }
 
+void UiBucketsTableWidget::onTableRowsChanged()
+{
+    int totalRows = ui->tableView->model()->rowCount();
+    ui->widgetPage->setTotalRow(totalRows);
+}
+
+void UiBucketsTableWidget::onPageNumChanged(int startRow, int count)
+{
+    // 更新每行是否显示
+    ui->tableView->scrollTo(ui->tableView->model()->index(startRow, 0));
+    for (int row = 0; row < ui->tableView->model()->rowCount(); ++row)
+    {
+        bool isVisible = row >= startRow && row < startRow + count;
+        ui->tableView->setRowHidden(row, !isVisible);
+    }
+}
 
 void UiBucketsTableWidget::on_tableView_doubleClicked(const QModelIndex &index)
 {

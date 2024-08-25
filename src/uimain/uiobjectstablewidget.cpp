@@ -9,7 +9,8 @@ UiObjectsTableWidget::UiObjectsTableWidget(QWidget *parent)
     , ui(new Ui::ObjectsWidget)
 {
     ui->setupUi(this);
-    // 绑定数据
+    ui->widgetPage->setMaxRowList({10, 20, 50});
+
     ui->tableView->setModel(ManagerModel::instance()->modelObjects());
 
     // 设置行宽度
@@ -22,11 +23,35 @@ UiObjectsTableWidget::UiObjectsTableWidget(QWidget *parent)
     ui->tableView->setSortingEnabled(true);     // 通过model指定排序规则
 
     ui->widgetBread->setPath("file1/a/b/c");    // Test
+
+    connect(ui->widgetPage, &UiPageWidget::pageNumChanged, this, &UiObjectsTableWidget::onPageNumChanged);
+    connect(ui->tableView->model(), &QAbstractItemModel::rowsInserted, this, &UiObjectsTableWidget::onTableRowsChanged);
+    connect(ui->tableView->model(), &QAbstractItemModel::rowsRemoved, this, &UiObjectsTableWidget::onTableRowsChanged);
+    connect(ui->tableView->model(), &QAbstractItemModel::modelReset, this, &UiObjectsTableWidget::onTableRowsChanged);
+
+    onTableRowsChanged();
 }
 
 UiObjectsTableWidget::~UiObjectsTableWidget()
 {
     delete ui;
+}
+
+void UiObjectsTableWidget::onTableRowsChanged()
+{
+    int totalRows = ui->tableView->model()->rowCount();
+    ui->widgetPage->setTotalRow(totalRows);
+}
+
+void UiObjectsTableWidget::onPageNumChanged(int startRow, int count)
+{
+    // 更新每行是否显示
+    ui->tableView->scrollTo(ui->tableView->model()->index(startRow, 0));
+    for (int row = 0; row < ui->tableView->model()->rowCount(); ++row)
+    {
+        bool isVisible = row >= startRow && row < startRow + count;
+        ui->tableView->setRowHidden(row, !isVisible);
+    }
 }
 
 void UiObjectsTableWidget::on_pushButtonBuckets_clicked()

@@ -12,7 +12,7 @@ UiPageWidget::UiPageWidget(QWidget *parent)
     , maxRowPerPage_(10)
 {
     ui->setupUi(this);
-
+    ui->lineEditMaxRows->setMinimumWidth(40);
     // 关联信号
     connect(ui->pushButtonPre, &QPushButton::clicked, this, &UiPageWidget::pre);
     connect(ui->pushButtonNext, &QPushButton::clicked, this, &UiPageWidget::next);
@@ -122,17 +122,12 @@ void UiPageWidget::onMaxRowItemSelected(const QString &text)
     setMaxRowPerPage(text.toInt());
 }
 
-void UiPageWidget::setPageCount()
+void UiPageWidget::reset()
 {
     // 更新总页码数
     ui->labelPageCount->setText("/"+QString::number(pageCount()));
     ui->lineEditCurrentPage->setWords(1, pageCount());    // 设置顺序序号
     ui->lineEditCurrentPage->setText("1");
-}
-
-void UiPageWidget::reset()
-{
-    setPageCount();
     switchPage(1);
 }
 

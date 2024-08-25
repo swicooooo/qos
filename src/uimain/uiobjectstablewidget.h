@@ -17,6 +17,8 @@ public:
 
 private slots:
     void on_pushButtonBuckets_clicked();
+    void onTableRowsChanged();
+    void onPageNumChanged(int startRow, int count);
 
 private:
     Ui::ObjectsWidget *ui;

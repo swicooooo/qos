@@ -3,7 +3,6 @@
 #include <entityclass.h>
 #include <DaoCloudMock.h>
 #include <DaoClouds.h>
-#include <QosPlugin.h>
 
 void ManagerModel::setBuckets(const QList<Bucket> &buckets)
 {
